@@ -1,0 +1,172 @@
+openapi: 3.0.0
+info:
+  title: Microservicio de Gestión de Rutas
+  description: Servicio para gestionar la información sobre las rutas de transporte público, permitiendo operaciones CRUD.
+  version: 1.0.0
+paths:
+  /routes:
+    post:
+      summary: Crear una nueva ruta
+      operationId: createRoute
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Route'
+      responses:
+        '201':
+          description: Ruta creada exitosamente
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Route'
+        '400':
+          description: Solicitud inválida
+
+  /routes/{_id}:
+    get:
+      summary: Obtener detalles de una ruta por ID
+      operationId: getRouteById
+      parameters:
+        - name: _id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Detalles de la ruta
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Route'
+        '404':
+          description: Ruta no encontrada
+
+    put:
+      summary: Actualizar información de una ruta
+      operationId: updateRoute
+      parameters:
+        - name: _id
+          in: path
+          required: true
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Route'
+      responses:
+        '200':
+          description: Ruta actualizada exitosamente
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Route'
+        '404':
+          description: Ruta no encontrada
+
+    delete:
+      summary: Eliminar una ruta
+      operationId: deleteRoute
+      parameters:
+        - name: _id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '204':
+          description: Ruta eliminada exitosamente
+        '404':
+          description: Ruta no encontrada
+
+components:
+  schemas:
+    Route:
+      type: object
+      properties:
+        _id:
+          type: string
+          description: Identificador único de la ruta
+        routeName:
+          type: string
+          description: Nombre descriptivo de la ruta
+        stops:
+          type: array
+          description: Lista de paradas en la ruta
+          items:
+            $ref: '#/components/schemas/Stop'
+        schedule:
+          $ref: '#/components/schemas/Schedule'
+      required:
+        - _id
+        - routeName
+        - stops
+        - schedule
+
+    Stop:
+      type: object
+      properties:
+        stopId:
+          type: string
+          description: Identificador único de la parada
+        stopName:
+          type: string
+          description: Nombre de la parada
+        coordinates:
+          type: object
+          description: Coordenadas de la parada
+          properties:
+            latitude:
+              type: number
+              format: float
+              description: Latitud de la parada
+            longitude:
+              type: number
+              format: float
+              description: Longitud de la parada
+        arrivalTimes:
+          type: array
+          description: Horarios de llegada del vehículo a la parada
+          items:
+            type: string
+            format: time
+      required:
+        - stopId
+        - stopName
+        - coordinates
+        - arrivalTimes
+
+    Schedule:
+      type: object
+      properties:
+        weekdays:
+          $ref: '#/components/schemas/ScheduleDetail'
+        weekends:
+          $ref: '#/components/schemas/ScheduleDetail'
+      required:
+        - weekdays
+        - weekends
+
+    ScheduleDetail:
+      type: object
+      properties:
+        startTime:
+          type: string
+          format: time
+          description: Hora de inicio del servicio
+        endTime:
+          type: string
+          format: time
+          description: Hora de fin del servicio
+        frequencyMinutes:
+          type: integer
+          description: Frecuencia en minutos
+      required:
+        - startTime
+        - endTime
+        - frequencyMinutes

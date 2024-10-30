@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="RouteController Unit Tests" tests="2" skipped="0" failures="0" errors="0" timestamp="2024-10-30T10:31:31" hostname="GFT-9H3G1F3" time="0.357">
+  <properties/>
+  <testcase name="Get Route By ID - Should Return OK Response" classname="com.workshop.route.application.controller.RouteControllerTest" time="0.334"/>
+  <testcase name="Get All Routes - Should Return OK Response for Each Route" classname="com.workshop.route.application.controller.RouteControllerTest" time="0.014"/>
+  <system-out><![CDATA[2024-10-30T11:31:32.189+01:00  INFO 4352 --- [route] [    Test worker] c.w.r.a.controller.RouteController       : Fetching route with ID: 507f1f77bcf86cd799439011
+2024-10-30T11:31:32.224+01:00  INFO 4352 --- [route] [    Test worker] c.w.r.a.controller.RouteController       : Successfully fetched route with ID: 507f1f77bcf86cd799439011
+2024-10-30T11:31:32.242+01:00  INFO 4352 --- [route] [    Test worker] c.w.r.a.controller.RouteController       : Fetching all routes
+2024-10-30T11:31:32.246+01:00  INFO 4352 --- [route] [    Test worker] c.w.r.a.controller.RouteController       : Starting to fetch all routes
+2024-10-30T11:31:32.247+01:00  INFO 4352 --- [route] [    Test worker] c.w.r.a.controller.RouteController       : Successfully fetched all routes
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
