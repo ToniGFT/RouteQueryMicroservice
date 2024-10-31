@@ -53,7 +53,7 @@ class RouteResponseServiceTest {
         Flux<Route> routeFlux = Flux.just(route);
 
         // when
-        Flux<ResponseEntity<Route>> result = routeResponseService.buildRoutesResponse(routeFlux);
+        Flux<ResponseEntity<Route>> result = routeResponseService.buildRoutesResponse(route);
 
         // then
         StepVerifier.create(result)

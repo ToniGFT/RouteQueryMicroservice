@@ -4,4 +4,15 @@ spring:
     data:
         mongodb:
             uri: mongodb+srv://nabz:nabz@workshop.rh1jm.mongodb.net/Workshop?retryWrites=true&w=majority
+    kafka:
+        bootstrap-servers: localhost:9092
+        producer:
+            key-serializer: org.apache.kafka.common.serialization.StringSerializer
+            value-serializer: org.apache.kafka.common.serialization.StringSerializer
 
+scheduling:
+    enabled: true
+
+kafka:
+    topics:
+        route-events: route-events

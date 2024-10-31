@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.781s</div>
+<div class="counter">0.996s</div>
 <p>duration</p>
 </div>
 </td>
@@ -82,7 +82,7 @@
 </thead>
 <tr>
 <td class="success">contextLoads()</td>
-<td class="success">0.781s</td>
+<td class="success">0.996s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -90,8 +90,8 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>11:31:28.200 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.workshop.route.RouteApplicationTests]: RouteApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-11:31:28.327 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.workshop.route.RouteApplication for test class com.workshop.route.RouteApplicationTests
+<pre>16:49:56.117 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.workshop.route.RouteApplicationTests]: RouteApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+16:49:56.330 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.workshop.route.RouteApplication for test class com.workshop.route.RouteApplicationTests
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -102,15 +102,15 @@
 
  :: Spring Boot ::                (v3.3.5)
 
-2024-10-30T11:31:28.720+01:00  INFO 4352 --- [route] [    Test worker] c.workshop.route.RouteApplicationTests   : Starting RouteApplicationTests using Java 21.0.5 with PID 4352 (started by aipg in C:\Coding\JavaProjects\WorkShop\Route\RouteQueryMicroservice)
-2024-10-30T11:31:28.722+01:00  INFO 4352 --- [route] [    Test worker] c.workshop.route.RouteApplicationTests   : No active profile set, falling back to 1 default profile: &quot;default&quot;
-2024-10-30T11:31:29.187+01:00  INFO 4352 --- [route] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Reactive MongoDB repositories in DEFAULT mode.
-2024-10-30T11:31:29.311+01:00  INFO 4352 --- [route] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 119 ms. Found 1 Reactive MongoDB repository interface.
-2024-10-30T11:31:30.087+01:00  INFO 4352 --- [route] [1jm.mongodb.net] org.mongodb.driver.cluster               : Adding discovered server workshop-shard-00-02.rh1jm.mongodb.net:27017 to client view of cluster
-2024-10-30T11:31:30.107+01:00  INFO 4352 --- [route] [    Test worker] org.mongodb.driver.client                : MongoClient with metadata {&quot;driver&quot;: {&quot;name&quot;: &quot;mongo-java-driver|reactive-streams|spring-boot&quot;, &quot;version&quot;: &quot;5.0.1&quot;}, &quot;os&quot;: {&quot;type&quot;: &quot;Windows&quot;, &quot;name&quot;: &quot;Windows 11&quot;, &quot;architecture&quot;: &quot;amd64&quot;, &quot;version&quot;: &quot;10.0&quot;}, &quot;platform&quot;: &quot;Java/Oracle Corporation/21.0.5+9-LTS-jvmci-23.1-b48&quot;} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=majority, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=MongoCredential{mechanism=null, userName='nabz', source='admin', password=&lt;hidden&gt;, mechanismProperties=&lt;hidden&gt;}, transportSettings=NettyTransportSettings{eventLoopGroup=io.netty.channel.nio.NioEventLoopGroup@3b57dba4, socketChannelClass=null, allocator=null, sslContext=null}, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@35f7969d, com.mongodb.Jep395RecordCodecProvider@3404e5c4, com.mongodb.KotlinCodecProvider@47569167]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[127.0.0.1:27017], srvHost=workshop.rh1jm.mongodb.net, srvServiceName=mongodb, mode=MULTIPLE, requiredClusterType=REPLICA_SET, requiredReplicaSetName='atlas-uwoswq-shard-0', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=true, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}
-2024-10-30T11:31:30.121+01:00  INFO 4352 --- [route] [1jm.mongodb.net] org.mongodb.driver.cluster               : Adding discovered server workshop-shard-00-00.rh1jm.mongodb.net:27017 to client view of cluster
-2024-10-30T11:31:30.124+01:00  INFO 4352 --- [route] [1jm.mongodb.net] org.mongodb.driver.cluster               : Adding discovered server workshop-shard-00-01.rh1jm.mongodb.net:27017 to client view of cluster
-2024-10-30T11:31:30.617+01:00  INFO 4352 --- [route] [ngodb.net:27017] org.mongodb.driver.cluster               : Exception in monitor thread while connecting to server workshop-shard-00-01.rh1jm.mongodb.net:27017
+2024-10-31T16:49:57.139+01:00  INFO 18216 --- [route] [    Test worker] c.workshop.route.RouteApplicationTests   : Starting RouteApplicationTests using Java 21.0.5 with PID 18216 (started by aipg in C:\Coding\JavaProjects\WorkShop\Route\RouteQueryMicroservice)
+2024-10-31T16:49:57.141+01:00  INFO 18216 --- [route] [    Test worker] c.workshop.route.RouteApplicationTests   : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2024-10-31T16:49:57.829+01:00  INFO 18216 --- [route] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Reactive MongoDB repositories in DEFAULT mode.
+2024-10-31T16:49:58.073+01:00  INFO 18216 --- [route] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 235 ms. Found 1 Reactive MongoDB repository interface.
+2024-10-31T16:49:59.612+01:00  INFO 18216 --- [route] [1jm.mongodb.net] org.mongodb.driver.cluster               : Adding discovered server workshop-shard-00-02.rh1jm.mongodb.net:27017 to client view of cluster
+2024-10-31T16:49:59.642+01:00  INFO 18216 --- [route] [    Test worker] org.mongodb.driver.client                : MongoClient with metadata {&quot;driver&quot;: {&quot;name&quot;: &quot;mongo-java-driver|reactive-streams|spring-boot&quot;, &quot;version&quot;: &quot;5.0.1&quot;}, &quot;os&quot;: {&quot;type&quot;: &quot;Windows&quot;, &quot;name&quot;: &quot;Windows 11&quot;, &quot;architecture&quot;: &quot;amd64&quot;, &quot;version&quot;: &quot;10.0&quot;}, &quot;platform&quot;: &quot;Java/Oracle Corporation/21.0.5+9-LTS-jvmci-23.1-b48&quot;} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=majority, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=MongoCredential{mechanism=null, userName='nabz', source='admin', password=&lt;hidden&gt;, mechanismProperties=&lt;hidden&gt;}, transportSettings=NettyTransportSettings{eventLoopGroup=io.netty.channel.nio.NioEventLoopGroup@3345e9b2, socketChannelClass=null, allocator=null, sslContext=null}, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@57d21a0e, com.mongodb.Jep395RecordCodecProvider@25e73877, com.mongodb.KotlinCodecProvider@6462f627]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[127.0.0.1:27017], srvHost=workshop.rh1jm.mongodb.net, srvServiceName=mongodb, mode=MULTIPLE, requiredClusterType=REPLICA_SET, requiredReplicaSetName='atlas-uwoswq-shard-0', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=true, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}
+2024-10-31T16:49:59.670+01:00  INFO 18216 --- [route] [1jm.mongodb.net] org.mongodb.driver.cluster               : Adding discovered server workshop-shard-00-00.rh1jm.mongodb.net:27017 to client view of cluster
+2024-10-31T16:49:59.675+01:00  INFO 18216 --- [route] [1jm.mongodb.net] org.mongodb.driver.cluster               : Adding discovered server workshop-shard-00-01.rh1jm.mongodb.net:27017 to client view of cluster
+2024-10-31T16:50:00.213+01:00  INFO 18216 --- [route] [ngodb.net:27017] org.mongodb.driver.cluster               : Exception in monitor thread while connecting to server workshop-shard-00-02.rh1jm.mongodb.net:27017
 
 com.mongodb.MongoSocketWriteException: Exception sending message
 	at com.mongodb.internal.connection.InternalStreamConnection.translateWriteException(InternalStreamConnection.java:691) ~[mongodb-driver-core-5.0.1.jar:na]
@@ -161,7 +161,7 @@ Caused by: javax.net.ssl.SSLException: Received fatal alert: internal_error
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
 	... 1 common frames omitted
 
-2024-10-30T11:31:30.617+01:00  INFO 4352 --- [route] [ngodb.net:27017] org.mongodb.driver.cluster               : Exception in monitor thread while connecting to server workshop-shard-00-00.rh1jm.mongodb.net:27017
+2024-10-31T16:50:00.213+01:00  INFO 18216 --- [route] [ngodb.net:27017] org.mongodb.driver.cluster               : Exception in monitor thread while connecting to server workshop-shard-00-00.rh1jm.mongodb.net:27017
 
 com.mongodb.MongoSocketWriteException: Exception sending message
 	at com.mongodb.internal.connection.InternalStreamConnection.translateWriteException(InternalStreamConnection.java:691) ~[mongodb-driver-core-5.0.1.jar:na]
@@ -212,7 +212,7 @@ Caused by: javax.net.ssl.SSLException: Received fatal alert: internal_error
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
 	... 1 common frames omitted
 
-2024-10-30T11:31:30.617+01:00  INFO 4352 --- [route] [ngodb.net:27017] org.mongodb.driver.cluster               : Exception in monitor thread while connecting to server workshop-shard-00-02.rh1jm.mongodb.net:27017
+2024-10-31T16:50:00.213+01:00  INFO 18216 --- [route] [ngodb.net:27017] org.mongodb.driver.cluster               : Exception in monitor thread while connecting to server workshop-shard-00-01.rh1jm.mongodb.net:27017
 
 com.mongodb.MongoSocketWriteException: Exception sending message
 	at com.mongodb.internal.connection.InternalStreamConnection.translateWriteException(InternalStreamConnection.java:691) ~[mongodb-driver-core-5.0.1.jar:na]
@@ -263,7 +263,7 @@ Caused by: javax.net.ssl.SSLException: Received fatal alert: internal_error
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
 	... 1 common frames omitted
 
-2024-10-30T11:31:31.077+01:00  INFO 4352 --- [route] [    Test worker] c.workshop.route.RouteApplicationTests   : Started RouteApplicationTests in 2.618 seconds (process running for 3.953)
+2024-10-31T16:50:01.090+01:00  INFO 18216 --- [route] [    Test worker] c.workshop.route.RouteApplicationTests   : Started RouteApplicationTests in 4.48 seconds (process running for 6.539)
 </pre>
 </span>
 </div>
@@ -285,7 +285,7 @@ WARNING: Dynamic loading of agents will be disallowed by default in a future rel
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 8.10.2</a> at Oct 30, 2024, 11:31:35 AM</p>
+<a href="http://www.gradle.org">Gradle 8.10.2</a> at Oct 31, 2024, 4:50:05 PM</p>
 </div>
 </div>
 </body>

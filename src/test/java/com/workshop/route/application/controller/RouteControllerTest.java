@@ -15,7 +15,6 @@ import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 import reactor.test.StepVerifier;
 
-import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.when;
 
 @DisplayName("RouteController Unit Tests")
@@ -66,7 +65,7 @@ class RouteControllerTest {
     void getAllRoutes_shouldReturnOkResponse() {
         // given
         when(routeQueryService.getAllRoutes()).thenReturn(Flux.just(route));
-        when(routeResponseService.buildRoutesResponse(any(Flux.class)))
+        when(routeResponseService.buildRoutesResponse(route))
                 .thenReturn(Flux.just(ResponseEntity.ok(route)));
 
         // when

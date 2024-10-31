@@ -14,7 +14,7 @@ public class RouteResponseService {
         return Mono.fromCallable(() -> RouteResponseBuilder.generateOkResponse(route));
     }
 
-    public Flux<ResponseEntity<Route>> buildRoutesResponse(Flux<Route> routes) {
-        return routes.map(RouteResponseBuilder::generateOkResponse);
+    public Flux<ResponseEntity<Route>> buildRoutesResponse(Route route) {
+        return Flux.just(RouteResponseBuilder.generateOkResponse(route));
     }
 }

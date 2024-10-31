@@ -39,8 +39,9 @@ public class RouteController {
     @GetMapping
     public Flux<ResponseEntity<Route>> getAllRoutes() {
         logger.info("Fetching all routes");
-        return routeResponseService.buildRoutesResponse(routeQueryService.getAllRoutes())
-                .doFirst(() -> logger.info("Starting to fetch all routes")) // Log al inicio de la operación
+        return routeQueryService.getAllRoutes()
+                .flatMap(routeResponseService::buildRoutesResponse)
+                .doFirst(() -> logger.info("Starting to fetch all routes"))
                 .doOnComplete(() -> logger.info("Successfully fetched all routes"));
     }
 }
