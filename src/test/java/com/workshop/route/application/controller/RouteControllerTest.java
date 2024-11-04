@@ -31,11 +31,13 @@ class RouteControllerTest {
 
     private Route route;
     private ObjectId id;
+    private String idString;
 
     @BeforeEach
     void setUp() {
         MockitoAnnotations.openMocks(this);
         id = new ObjectId("507f1f77bcf86cd799439011");
+        idString = "507f1f77bcf86cd799439011";
         route = Route.builder()
                 .routeId(id)
                 .routeName("Test Route")
@@ -51,7 +53,7 @@ class RouteControllerTest {
                 .thenReturn(Mono.just(ResponseEntity.ok(route)));
 
         // when
-        Mono<ResponseEntity<Route>> result = routeController.getRouteById(id);
+        Mono<ResponseEntity<Route>> result = routeController.getRouteById(idString);
 
         // then
         StepVerifier.create(result)

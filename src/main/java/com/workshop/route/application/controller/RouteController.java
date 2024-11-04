@@ -27,8 +27,9 @@ public class RouteController {
         this.routeResponseService = routeResponseService;
     }
 
-    @GetMapping("/{_id}")
-    public Mono<ResponseEntity<Route>> getRouteById(@PathVariable("_id") ObjectId id) {
+    @GetMapping("/{idString}")
+    public Mono<ResponseEntity<Route>> getRouteById(@PathVariable("idString") String idString) {
+        ObjectId id = new ObjectId(idString);
         logger.info("Fetching route with ID: {}", id);
         return routeQueryService.getRouteById(id)
                 .flatMap(routeResponseService::buildOkResponse)
