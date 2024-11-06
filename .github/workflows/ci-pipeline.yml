@@ -1,4 +1,4 @@
-name: Java CI with Maven and JaCoCo
+name: Java CI with Gradle and JaCoCo
 
 on:
   push:
@@ -22,11 +22,11 @@ jobs:
           java-version: '21'
           distribution: 'temurin'
 
-      - name: Build and test with Maven
-        run: mvn clean verify -X -Pexclude-e2e-tests  # Agregado para mayor detalle en los logs
+      - name: Build and test with Gradle
+        run: gradle clean build --no-daemon
 
       - name: Upload JaCoCo Coverage Report
         uses: actions/upload-artifact@v4
         with:
           name: jacoco-report
-          path: target/site/jacoco/index.html
+          path: build/reports/jacoco/test/html/index.html
