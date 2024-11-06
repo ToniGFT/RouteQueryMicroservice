@@ -1,0 +1,32 @@
+name: Java CI with Maven and JaCoCo
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 21
+        uses: actions/setup-java@v4
+        with:
+          java-version: '21'
+          distribution: 'temurin'
+
+      - name: Build and test with Maven
+        run: mvn clean verify -X -Pexclude-e2e-tests  # Agregado para mayor detalle en los logs
+
+      - name: Upload JaCoCo Coverage Report
+        uses: actions/upload-artifact@v4
+        with:
+          name: jacoco-report
+          path: target/site/jacoco/index.html
