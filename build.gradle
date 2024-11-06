@@ -2,6 +2,7 @@ plugins {
     id 'java'
     id 'org.springframework.boot' version '3.3.5'
     id 'io.spring.dependency-management' version '1.1.6'
+    id 'jacoco'
 }
 
 group = 'com.workshop'
@@ -39,4 +40,22 @@ dependencies {
 
 tasks.named('test') {
     useJUnitPlatform()
+    exclude '**/*EndToEndTest.java'
+}
+
+jacoco {
+    toolVersion = "0.8.12"
+}
+
+jacocoTestReport {
+    dependsOn test
+    reports {
+        html.enabled true
+        xml.enabled true
+    }
+}
+
+test {
+    useJUnitPlatform()
+    exclude '**/*EndToEndTest.java'
 }
