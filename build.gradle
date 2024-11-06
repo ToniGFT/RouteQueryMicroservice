@@ -38,9 +38,14 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-validation'
 }
 
+if (project.hasProperty('skip.endtoend.tests') && project.skip.endtoend.tests == 'true') {
+    tasks.named('test') {
+        exclude '**/*EndToEndTest.java'
+    }
+}
+
 tasks.named('test') {
     useJUnitPlatform()
-    exclude '**/*EndToEndTest.java'
 }
 
 jacoco {
@@ -57,5 +62,4 @@ jacocoTestReport {
 
 test {
     useJUnitPlatform()
-    exclude '**/*EndToEndTest.java'
 }
