@@ -36,9 +36,7 @@ dependencies {
     testImplementation 'io.projectreactor:reactor-test'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
     implementation 'org.springframework.boot:spring-boot-starter-validation'
-    implementation group: 'org.jacoco', name: 'jacoco-maven-plugin', version: '0.8.12'
 }
-
 
 tasks.named('test') {
     useJUnitPlatform()
