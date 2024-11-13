@@ -1,0 +1,2117 @@
+Index: build/test-results/test/TEST-com.workshop.route.RouteApplicationTests.xml
+===================================================================
+diff --git a/build/test-results/test/TEST-com.workshop.route.RouteApplicationTests.xml b/build/test-results/test/TEST-com.workshop.route.RouteApplicationTests.xml
+deleted file mode 100644
+--- a/build/test-results/test/TEST-com.workshop.route.RouteApplicationTests.xml	(revision fbd63ef65798ce83b6487e3c451b3dbdbf92ae22)
++++ /dev/null	(revision fbd63ef65798ce83b6487e3c451b3dbdbf92ae22)
+@@ -1,185 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<testsuite name="com.workshop.route.RouteApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-10-31T15:50:01" hostname="GFT-9H3G1F3" time="0.996">
+-  <properties/>
+-  <testcase name="contextLoads()" classname="com.workshop.route.RouteApplicationTests" time="0.996"/>
+-  <system-out><![CDATA[16:49:56.117 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.workshop.route.RouteApplicationTests]: RouteApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+-16:49:56.330 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.workshop.route.RouteApplication for test class com.workshop.route.RouteApplicationTests
+-
+-  .   ____          _            __ _ _
+- /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+-( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+- \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+-  '  |____| .__|_| |_|_| |_\__, | / / / /
+- =========|_|==============|___/=/_/_/_/
+-
+- :: Spring Boot ::                (v3.3.5)
+-
+-2024-10-31T16:49:57.139+01:00  INFO 18216 --- [route] [    Test worker] c.workshop.route.RouteApplicationTests   : Starting RouteApplicationTests using Java 21.0.5 with PID 18216 (started by aipg in C:\Coding\JavaProjects\WorkShop\Route\RouteQueryMicroservice)
+-2024-10-31T16:49:57.141+01:00  INFO 18216 --- [route] [    Test worker] c.workshop.route.RouteApplicationTests   : No active profile set, falling back to 1 default profile: "default"
+-2024-10-31T16:49:57.829+01:00  INFO 18216 --- [route] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Reactive MongoDB repositories in DEFAULT mode.
+-2024-10-31T16:49:58.073+01:00  INFO 18216 --- [route] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 235 ms. Found 1 Reactive MongoDB repository interface.
+-2024-10-31T16:49:59.612+01:00  INFO 18216 --- [route] [1jm.mongodb.net] org.mongodb.driver.cluster               : Adding discovered server workshop-shard-00-02.rh1jm.mongodb.net:27017 to client view of cluster
+-2024-10-31T16:49:59.642+01:00  INFO 18216 --- [route] [    Test worker] org.mongodb.driver.client                : MongoClient with metadata {"driver": {"name": "mongo-java-driver|reactive-streams|spring-boot", "version": "5.0.1"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/21.0.5+9-LTS-jvmci-23.1-b48"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=majority, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=MongoCredential{mechanism=null, userName='nabz', source='admin', password=<hidden>, mechanismProperties=<hidden>}, transportSettings=NettyTransportSettings{eventLoopGroup=io.netty.channel.nio.NioEventLoopGroup@3345e9b2, socketChannelClass=null, allocator=null, sslContext=null}, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@57d21a0e, com.mongodb.Jep395RecordCodecProvider@25e73877, com.mongodb.KotlinCodecProvider@6462f627]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[127.0.0.1:27017], srvHost=workshop.rh1jm.mongodb.net, srvServiceName=mongodb, mode=MULTIPLE, requiredClusterType=REPLICA_SET, requiredReplicaSetName='atlas-uwoswq-shard-0', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=true, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}
+-2024-10-31T16:49:59.670+01:00  INFO 18216 --- [route] [1jm.mongodb.net] org.mongodb.driver.cluster               : Adding discovered server workshop-shard-00-00.rh1jm.mongodb.net:27017 to client view of cluster
+-2024-10-31T16:49:59.675+01:00  INFO 18216 --- [route] [1jm.mongodb.net] org.mongodb.driver.cluster               : Adding discovered server workshop-shard-00-01.rh1jm.mongodb.net:27017 to client view of cluster
+-2024-10-31T16:50:00.213+01:00  INFO 18216 --- [route] [ngodb.net:27017] org.mongodb.driver.cluster               : Exception in monitor thread while connecting to server workshop-shard-00-02.rh1jm.mongodb.net:27017
+-
+-com.mongodb.MongoSocketWriteException: Exception sending message
+-	at com.mongodb.internal.connection.InternalStreamConnection.translateWriteException(InternalStreamConnection.java:691) ~[mongodb-driver-core-5.0.1.jar:na]
+-	at com.mongodb.internal.connection.InternalStreamConnection.sendMessage(InternalStreamConnection.java:564) ~[mongodb-driver-core-5.0.1.jar:na]
+-	at com.mongodb.internal.connection.InternalStreamConnection.sendCommandMessage(InternalStreamConnection.java:396) ~[mongodb-driver-core-5.0.1.jar:na]
+-	at com.mongodb.internal.connection.InternalStreamConnection.sendAndReceive(InternalStreamConnection.java:346) ~[mongodb-driver-core-5.0.1.jar:na]
+-	at com.mongodb.internal.connection.CommandHelper.sendAndReceive(CommandHelper.java:92) ~[mongodb-driver-core-5.0.1.jar:na]
+-	at com.mongodb.internal.connection.CommandHelper.executeCommand(CommandHelper.java:48) ~[mongodb-driver-core-5.0.1.jar:na]
+-	at com.mongodb.internal.connection.InternalStreamConnectionInitializer.initializeConnectionDescription(InternalStreamConnectionInitializer.java:130) ~[mongodb-driver-core-5.0.1.jar:na]
+-	at com.mongodb.internal.connection.InternalStreamConnectionInitializer.startHandshake(InternalStreamConnectionInitializer.java:78) ~[mongodb-driver-core-5.0.1.jar:na]
+-	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:203) ~[mongodb-driver-core-5.0.1.jar:na]
+-	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:193) ~[mongodb-driver-core-5.0.1.jar:na]
+-	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:153) ~[mongodb-driver-core-5.0.1.jar:na]
+-	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+-Caused by: javax.net.ssl.SSLException: Received fatal alert: internal_error
+-	at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:132) ~[na:na]
+-	at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:117) ~[na:na]
+-	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:370) ~[na:na]
+-	at java.base/sun.security.ssl.Alert$AlertConsumer.consume(Alert.java:287) ~[na:na]
+-	at java.base/sun.security.ssl.TransportContext.dispatch(TransportContext.java:209) ~[na:na]
+-	at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:172) ~[na:na]
+-	at java.base/sun.security.ssl.SSLEngineImpl.decode(SSLEngineImpl.java:736) ~[na:na]
+-	at java.base/sun.security.ssl.SSLEngineImpl.readRecord(SSLEngineImpl.java:691) ~[na:na]
+-	at java.base/sun.security.ssl.SSLEngineImpl.unwrap(SSLEngineImpl.java:506) ~[na:na]
+-	at java.base/sun.security.ssl.SSLEngineImpl.unwrap(SSLEngineImpl.java:482) ~[na:na]
+-	at java.base/javax.net.ssl.SSLEngine.unwrap(SSLEngine.java:679) ~[na:na]
+-	at io.netty.handler.ssl.SslHandler$SslEngineType$3.unwrap(SslHandler.java:309) ~[netty-handler-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.handler.ssl.SslHandler.unwrap(SslHandler.java:1473) ~[netty-handler-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.handler.ssl.SslHandler.decodeJdkCompatible(SslHandler.java:1366) ~[netty-handler-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.handler.ssl.SslHandler.decode(SslHandler.java:1415) ~[netty-handler-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:530) ~[netty-codec-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:469) ~[netty-codec-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:290) ~[netty-codec-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1357) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:868) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+-	... 1 common frames omitted
+-
+-2024-10-31T16:50:00.213+01:00  INFO 18216 --- [route] [ngodb.net:27017] org.mongodb.driver.cluster               : Exception in monitor thread while connecting to server workshop-shard-00-00.rh1jm.mongodb.net:27017
+-
+-com.mongodb.MongoSocketWriteException: Exception sending message
+-	at com.mongodb.internal.connection.InternalStreamConnection.translateWriteException(InternalStreamConnection.java:691) ~[mongodb-driver-core-5.0.1.jar:na]
+-	at com.mongodb.internal.connection.InternalStreamConnection.sendMessage(InternalStreamConnection.java:564) ~[mongodb-driver-core-5.0.1.jar:na]
+-	at com.mongodb.internal.connection.InternalStreamConnection.sendCommandMessage(InternalStreamConnection.java:396) ~[mongodb-driver-core-5.0.1.jar:na]
+-	at com.mongodb.internal.connection.InternalStreamConnection.sendAndReceive(InternalStreamConnection.java:346) ~[mongodb-driver-core-5.0.1.jar:na]
+-	at com.mongodb.internal.connection.CommandHelper.sendAndReceive(CommandHelper.java:92) ~[mongodb-driver-core-5.0.1.jar:na]
+-	at com.mongodb.internal.connection.CommandHelper.executeCommand(CommandHelper.java:48) ~[mongodb-driver-core-5.0.1.jar:na]
+-	at com.mongodb.internal.connection.InternalStreamConnectionInitializer.initializeConnectionDescription(InternalStreamConnectionInitializer.java:130) ~[mongodb-driver-core-5.0.1.jar:na]
+-	at com.mongodb.internal.connection.InternalStreamConnectionInitializer.startHandshake(InternalStreamConnectionInitializer.java:78) ~[mongodb-driver-core-5.0.1.jar:na]
+-	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:203) ~[mongodb-driver-core-5.0.1.jar:na]
+-	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:193) ~[mongodb-driver-core-5.0.1.jar:na]
+-	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:153) ~[mongodb-driver-core-5.0.1.jar:na]
+-	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+-Caused by: javax.net.ssl.SSLException: Received fatal alert: internal_error
+-	at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:132) ~[na:na]
+-	at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:117) ~[na:na]
+-	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:370) ~[na:na]
+-	at java.base/sun.security.ssl.Alert$AlertConsumer.consume(Alert.java:287) ~[na:na]
+-	at java.base/sun.security.ssl.TransportContext.dispatch(TransportContext.java:209) ~[na:na]
+-	at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:172) ~[na:na]
+-	at java.base/sun.security.ssl.SSLEngineImpl.decode(SSLEngineImpl.java:736) ~[na:na]
+-	at java.base/sun.security.ssl.SSLEngineImpl.readRecord(SSLEngineImpl.java:691) ~[na:na]
+-	at java.base/sun.security.ssl.SSLEngineImpl.unwrap(SSLEngineImpl.java:506) ~[na:na]
+-	at java.base/sun.security.ssl.SSLEngineImpl.unwrap(SSLEngineImpl.java:482) ~[na:na]
+-	at java.base/javax.net.ssl.SSLEngine.unwrap(SSLEngine.java:679) ~[na:na]
+-	at io.netty.handler.ssl.SslHandler$SslEngineType$3.unwrap(SslHandler.java:309) ~[netty-handler-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.handler.ssl.SslHandler.unwrap(SslHandler.java:1473) ~[netty-handler-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.handler.ssl.SslHandler.decodeJdkCompatible(SslHandler.java:1366) ~[netty-handler-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.handler.ssl.SslHandler.decode(SslHandler.java:1415) ~[netty-handler-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:530) ~[netty-codec-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:469) ~[netty-codec-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:290) ~[netty-codec-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1357) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:868) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+-	... 1 common frames omitted
+-
+-2024-10-31T16:50:00.213+01:00  INFO 18216 --- [route] [ngodb.net:27017] org.mongodb.driver.cluster               : Exception in monitor thread while connecting to server workshop-shard-00-01.rh1jm.mongodb.net:27017
+-
+-com.mongodb.MongoSocketWriteException: Exception sending message
+-	at com.mongodb.internal.connection.InternalStreamConnection.translateWriteException(InternalStreamConnection.java:691) ~[mongodb-driver-core-5.0.1.jar:na]
+-	at com.mongodb.internal.connection.InternalStreamConnection.sendMessage(InternalStreamConnection.java:564) ~[mongodb-driver-core-5.0.1.jar:na]
+-	at com.mongodb.internal.connection.InternalStreamConnection.sendCommandMessage(InternalStreamConnection.java:396) ~[mongodb-driver-core-5.0.1.jar:na]
+-	at com.mongodb.internal.connection.InternalStreamConnection.sendAndReceive(InternalStreamConnection.java:346) ~[mongodb-driver-core-5.0.1.jar:na]
+-	at com.mongodb.internal.connection.CommandHelper.sendAndReceive(CommandHelper.java:92) ~[mongodb-driver-core-5.0.1.jar:na]
+-	at com.mongodb.internal.connection.CommandHelper.executeCommand(CommandHelper.java:48) ~[mongodb-driver-core-5.0.1.jar:na]
+-	at com.mongodb.internal.connection.InternalStreamConnectionInitializer.initializeConnectionDescription(InternalStreamConnectionInitializer.java:130) ~[mongodb-driver-core-5.0.1.jar:na]
+-	at com.mongodb.internal.connection.InternalStreamConnectionInitializer.startHandshake(InternalStreamConnectionInitializer.java:78) ~[mongodb-driver-core-5.0.1.jar:na]
+-	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:203) ~[mongodb-driver-core-5.0.1.jar:na]
+-	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:193) ~[mongodb-driver-core-5.0.1.jar:na]
+-	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:153) ~[mongodb-driver-core-5.0.1.jar:na]
+-	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+-Caused by: javax.net.ssl.SSLException: Received fatal alert: internal_error
+-	at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:132) ~[na:na]
+-	at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:117) ~[na:na]
+-	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:370) ~[na:na]
+-	at java.base/sun.security.ssl.Alert$AlertConsumer.consume(Alert.java:287) ~[na:na]
+-	at java.base/sun.security.ssl.TransportContext.dispatch(TransportContext.java:209) ~[na:na]
+-	at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:172) ~[na:na]
+-	at java.base/sun.security.ssl.SSLEngineImpl.decode(SSLEngineImpl.java:736) ~[na:na]
+-	at java.base/sun.security.ssl.SSLEngineImpl.readRecord(SSLEngineImpl.java:691) ~[na:na]
+-	at java.base/sun.security.ssl.SSLEngineImpl.unwrap(SSLEngineImpl.java:506) ~[na:na]
+-	at java.base/sun.security.ssl.SSLEngineImpl.unwrap(SSLEngineImpl.java:482) ~[na:na]
+-	at java.base/javax.net.ssl.SSLEngine.unwrap(SSLEngine.java:679) ~[na:na]
+-	at io.netty.handler.ssl.SslHandler$SslEngineType$3.unwrap(SslHandler.java:309) ~[netty-handler-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.handler.ssl.SslHandler.unwrap(SslHandler.java:1473) ~[netty-handler-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.handler.ssl.SslHandler.decodeJdkCompatible(SslHandler.java:1366) ~[netty-handler-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.handler.ssl.SslHandler.decode(SslHandler.java:1415) ~[netty-handler-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:530) ~[netty-codec-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:469) ~[netty-codec-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:290) ~[netty-codec-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1357) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:868) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+-	... 1 common frames omitted
+-
+-2024-10-31T16:50:01.090+01:00  INFO 18216 --- [route] [    Test worker] c.workshop.route.RouteApplicationTests   : Started RouteApplicationTests in 4.48 seconds (process running for 6.539)
+-]]></system-out>
+-  <system-err><![CDATA[WARNING: A Java agent has been loaded dynamically (C:\Users\aipg\.gradle\caches\modules-2\files-2.1\net.bytebuddy\byte-buddy-agent\1.14.19\154da3a65b4f4a909d3e5bdec55d1b2b4cbb6ce1\byte-buddy-agent-1.14.19.jar)
+-WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+-WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+-WARNING: Dynamic loading of agents will be disallowed by default in a future release
+-]]></system-err>
+-</testsuite>
+Index: build/reports/tests/test/packages/com.workshop.route.application.services.html
+===================================================================
+diff --git a/build/reports/tests/test/packages/com.workshop.route.application.services.html b/build/reports/tests/test/packages/com.workshop.route.application.services.html
+deleted file mode 100644
+--- a/build/reports/tests/test/packages/com.workshop.route.application.services.html	(revision fbd63ef65798ce83b6487e3c451b3dbdbf92ae22)
++++ /dev/null	(revision fbd63ef65798ce83b6487e3c451b3dbdbf92ae22)
+@@ -1,103 +0,0 @@
+-<!DOCTYPE html>
+-<html>
+-<head>
+-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+-<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+-<title>Test results - Package com.workshop.route.application.services</title>
+-<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+-<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+-<script src="../js/report.js" type="text/javascript"></script>
+-</head>
+-<body>
+-<div id="content">
+-<h1>Package com.workshop.route.application.services</h1>
+-<div class="breadcrumbs">
+-<a href="../index.html">all</a> &gt; com.workshop.route.application.services</div>
+-<div id="summary">
+-<table>
+-<tr>
+-<td>
+-<div class="summaryGroup">
+-<table>
+-<tr>
+-<td>
+-<div class="infoBox" id="tests">
+-<div class="counter">3</div>
+-<p>tests</p>
+-</div>
+-</td>
+-<td>
+-<div class="infoBox" id="failures">
+-<div class="counter">0</div>
+-<p>failures</p>
+-</div>
+-</td>
+-<td>
+-<div class="infoBox" id="ignored">
+-<div class="counter">0</div>
+-<p>ignored</p>
+-</div>
+-</td>
+-<td>
+-<div class="infoBox" id="duration">
+-<div class="counter">0.168s</div>
+-<p>duration</p>
+-</div>
+-</td>
+-</tr>
+-</table>
+-</div>
+-</td>
+-<td>
+-<div class="infoBox success" id="successRate">
+-<div class="percent">100%</div>
+-<p>successful</p>
+-</div>
+-</td>
+-</tr>
+-</table>
+-</div>
+-<div id="tabs">
+-<ul class="tabLinks">
+-<li>
+-<a href="#tab0">Classes</a>
+-</li>
+-</ul>
+-<div id="tab0" class="tab">
+-<h2>Classes</h2>
+-<table>
+-<thead>
+-<tr>
+-<th>Class</th>
+-<th>Tests</th>
+-<th>Failures</th>
+-<th>Ignored</th>
+-<th>Duration</th>
+-<th>Success rate</th>
+-</tr>
+-</thead>
+-<tr>
+-<td class="success">
+-<a href="../classes/com.workshop.route.application.services.RouteQueryServiceImplTest.html">RouteServiceImpl Unit Tests</a>
+-</td>
+-<td>3</td>
+-<td>0</td>
+-<td>0</td>
+-<td>0.168s</td>
+-<td class="success">100%</td>
+-</tr>
+-</table>
+-</div>
+-</div>
+-<div id="footer">
+-<p>
+-<div>
+-<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+-<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+-</label>
+-</div>Generated by 
+-<a href="http://www.gradle.org">Gradle 8.10.2</a> at Oct 31, 2024, 4:50:05 PM</p>
+-</div>
+-</div>
+-</body>
+-</html>
+Index: build/test-results/test/TEST-com.workshop.route.application.response.service.RouteResponseServiceTest.xml
+===================================================================
+diff --git a/build/test-results/test/TEST-com.workshop.route.application.response.service.RouteResponseServiceTest.xml b/build/test-results/test/TEST-com.workshop.route.application.response.service.RouteResponseServiceTest.xml
+deleted file mode 100644
+--- a/build/test-results/test/TEST-com.workshop.route.application.response.service.RouteResponseServiceTest.xml	(revision fbd63ef65798ce83b6487e3c451b3dbdbf92ae22)
++++ /dev/null	(revision fbd63ef65798ce83b6487e3c451b3dbdbf92ae22)
+@@ -1,8 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<testsuite name="RouteResponseService Unit Tests" tests="2" skipped="0" failures="0" errors="0" timestamp="2024-10-31T15:50:02" hostname="GFT-9H3G1F3" time="0.018">
+-  <properties/>
+-  <testcase name="Build Routes Response - Should Return Flux with 200 OK for Each Route" classname="com.workshop.route.application.response.service.RouteResponseServiceTest" time="0.012"/>
+-  <testcase name="Build OK Response - Should Return Mono with 200 OK" classname="com.workshop.route.application.response.service.RouteResponseServiceTest" time="0.005"/>
+-  <system-out><![CDATA[]]></system-out>
+-  <system-err><![CDATA[]]></system-err>
+-</testsuite>
+Index: build/reports/tests/test/packages/com.workshop.route.application.response.builder.html
+===================================================================
+diff --git a/build/reports/tests/test/packages/com.workshop.route.application.response.builder.html b/build/reports/tests/test/packages/com.workshop.route.application.response.builder.html
+deleted file mode 100644
+--- a/build/reports/tests/test/packages/com.workshop.route.application.response.builder.html	(revision fbd63ef65798ce83b6487e3c451b3dbdbf92ae22)
++++ /dev/null	(revision fbd63ef65798ce83b6487e3c451b3dbdbf92ae22)
+@@ -1,103 +0,0 @@
+-<!DOCTYPE html>
+-<html>
+-<head>
+-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+-<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+-<title>Test results - Package com.workshop.route.application.response.builder</title>
+-<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+-<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+-<script src="../js/report.js" type="text/javascript"></script>
+-</head>
+-<body>
+-<div id="content">
+-<h1>Package com.workshop.route.application.response.builder</h1>
+-<div class="breadcrumbs">
+-<a href="../index.html">all</a> &gt; com.workshop.route.application.response.builder</div>
+-<div id="summary">
+-<table>
+-<tr>
+-<td>
+-<div class="summaryGroup">
+-<table>
+-<tr>
+-<td>
+-<div class="infoBox" id="tests">
+-<div class="counter">1</div>
+-<p>tests</p>
+-</div>
+-</td>
+-<td>
+-<div class="infoBox" id="failures">
+-<div class="counter">0</div>
+-<p>failures</p>
+-</div>
+-</td>
+-<td>
+-<div class="infoBox" id="ignored">
+-<div class="counter">0</div>
+-<p>ignored</p>
+-</div>
+-</td>
+-<td>
+-<div class="infoBox" id="duration">
+-<div class="counter">0.115s</div>
+-<p>duration</p>
+-</div>
+-</td>
+-</tr>
+-</table>
+-</div>
+-</td>
+-<td>
+-<div class="infoBox success" id="successRate">
+-<div class="percent">100%</div>
+-<p>successful</p>
+-</div>
+-</td>
+-</tr>
+-</table>
+-</div>
+-<div id="tabs">
+-<ul class="tabLinks">
+-<li>
+-<a href="#tab0">Classes</a>
+-</li>
+-</ul>
+-<div id="tab0" class="tab">
+-<h2>Classes</h2>
+-<table>
+-<thead>
+-<tr>
+-<th>Class</th>
+-<th>Tests</th>
+-<th>Failures</th>
+-<th>Ignored</th>
+-<th>Duration</th>
+-<th>Success rate</th>
+-</tr>
+-</thead>
+-<tr>
+-<td class="success">
+-<a href="../classes/com.workshop.route.application.response.builder.RouteResponseBuilderTest.html">RouteResponseBuilder Unit Tests</a>
+-</td>
+-<td>1</td>
+-<td>0</td>
+-<td>0</td>
+-<td>0.115s</td>
+-<td class="success">100%</td>
+-</tr>
+-</table>
+-</div>
+-</div>
+-<div id="footer">
+-<p>
+-<div>
+-<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+-<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+-</label>
+-</div>Generated by 
+-<a href="http://www.gradle.org">Gradle 8.10.2</a> at Oct 31, 2024, 4:50:05 PM</p>
+-</div>
+-</div>
+-</body>
+-</html>
+Index: build/reports/tests/test/classes/com.workshop.route.application.controller.RouteControllerTest.html
+===================================================================
+diff --git a/build/reports/tests/test/classes/com.workshop.route.application.controller.RouteControllerTest.html b/build/reports/tests/test/classes/com.workshop.route.application.controller.RouteControllerTest.html
+deleted file mode 100644
+--- a/build/reports/tests/test/classes/com.workshop.route.application.controller.RouteControllerTest.html	(revision fbd63ef65798ce83b6487e3c451b3dbdbf92ae22)
++++ /dev/null	(revision fbd63ef65798ce83b6487e3c451b3dbdbf92ae22)
+@@ -1,118 +0,0 @@
+-<!DOCTYPE html>
+-<html>
+-<head>
+-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+-<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+-<title>Test results - RouteController Unit Tests</title>
+-<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+-<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+-<script src="../js/report.js" type="text/javascript"></script>
+-</head>
+-<body>
+-<div id="content">
+-<h1>RouteController Unit Tests</h1>
+-<div class="breadcrumbs">
+-<a href="../index.html">all</a> &gt; 
+-<a href="../packages/com.workshop.route.application.controller.html">com.workshop.route.application.controller</a> &gt; RouteControllerTest</div>
+-<div id="summary">
+-<table>
+-<tr>
+-<td>
+-<div class="summaryGroup">
+-<table>
+-<tr>
+-<td>
+-<div class="infoBox" id="tests">
+-<div class="counter">2</div>
+-<p>tests</p>
+-</div>
+-</td>
+-<td>
+-<div class="infoBox" id="failures">
+-<div class="counter">0</div>
+-<p>failures</p>
+-</div>
+-</td>
+-<td>
+-<div class="infoBox" id="ignored">
+-<div class="counter">0</div>
+-<p>ignored</p>
+-</div>
+-</td>
+-<td>
+-<div class="infoBox" id="duration">
+-<div class="counter">0.339s</div>
+-<p>duration</p>
+-</div>
+-</td>
+-</tr>
+-</table>
+-</div>
+-</td>
+-<td>
+-<div class="infoBox success" id="successRate">
+-<div class="percent">100%</div>
+-<p>successful</p>
+-</div>
+-</td>
+-</tr>
+-</table>
+-</div>
+-<div id="tabs">
+-<ul class="tabLinks">
+-<li>
+-<a href="#tab0">Tests</a>
+-</li>
+-<li>
+-<a href="#tab1">Standard output</a>
+-</li>
+-</ul>
+-<div id="tab0" class="tab">
+-<h2>Tests</h2>
+-<table>
+-<thead>
+-<tr>
+-<th>Test</th>
+-<th>Method name</th>
+-<th>Duration</th>
+-<th>Result</th>
+-</tr>
+-</thead>
+-<tr>
+-<td class="success">Get All Routes - Should Return OK Response for Each Route</td>
+-<td class="success">getAllRoutes_shouldReturnOkResponse()</td>
+-<td class="success">0.016s</td>
+-<td class="success">passed</td>
+-</tr>
+-<tr>
+-<td class="success">Get Route By ID - Should Return OK Response</td>
+-<td class="success">getRouteById_shouldReturnOkResponse()</td>
+-<td class="success">0.323s</td>
+-<td class="success">passed</td>
+-</tr>
+-</table>
+-</div>
+-<div id="tab1" class="tab">
+-<h2>Standard output</h2>
+-<span class="code">
+-<pre>2024-10-31T16:50:02.386+01:00  INFO 18216 --- [route] [    Test worker] c.w.r.a.controller.RouteController       : Fetching route with ID: 507f1f77bcf86cd799439011
+-2024-10-31T16:50:02.452+01:00  INFO 18216 --- [route] [    Test worker] c.w.r.a.controller.RouteController       : Successfully fetched route with ID: 507f1f77bcf86cd799439011
+-2024-10-31T16:50:02.468+01:00  INFO 18216 --- [route] [    Test worker] c.w.r.a.controller.RouteController       : Fetching all routes
+-2024-10-31T16:50:02.474+01:00  INFO 18216 --- [route] [    Test worker] c.w.r.a.controller.RouteController       : Starting to fetch all routes
+-2024-10-31T16:50:02.475+01:00  INFO 18216 --- [route] [    Test worker] c.w.r.a.controller.RouteController       : Successfully fetched all routes
+-</pre>
+-</span>
+-</div>
+-</div>
+-<div id="footer">
+-<p>
+-<div>
+-<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+-<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+-</label>
+-</div>Generated by 
+-<a href="http://www.gradle.org">Gradle 8.10.2</a> at Oct 31, 2024, 4:50:05 PM</p>
+-</div>
+-</div>
+-</body>
+-</html>
+Index: build/reports/tests/test/classes/com.workshop.route.application.services.RouteQueryServiceImplTest.html
+===================================================================
+diff --git a/build/reports/tests/test/classes/com.workshop.route.application.services.RouteQueryServiceImplTest.html b/build/reports/tests/test/classes/com.workshop.route.application.services.RouteQueryServiceImplTest.html
+deleted file mode 100644
+--- a/build/reports/tests/test/classes/com.workshop.route.application.services.RouteQueryServiceImplTest.html	(revision fbd63ef65798ce83b6487e3c451b3dbdbf92ae22)
++++ /dev/null	(revision fbd63ef65798ce83b6487e3c451b3dbdbf92ae22)
+@@ -1,110 +0,0 @@
+-<!DOCTYPE html>
+-<html>
+-<head>
+-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+-<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+-<title>Test results - RouteServiceImpl Unit Tests</title>
+-<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+-<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+-<script src="../js/report.js" type="text/javascript"></script>
+-</head>
+-<body>
+-<div id="content">
+-<h1>RouteServiceImpl Unit Tests</h1>
+-<div class="breadcrumbs">
+-<a href="../index.html">all</a> &gt; 
+-<a href="../packages/com.workshop.route.application.services.html">com.workshop.route.application.services</a> &gt; RouteQueryServiceImplTest</div>
+-<div id="summary">
+-<table>
+-<tr>
+-<td>
+-<div class="summaryGroup">
+-<table>
+-<tr>
+-<td>
+-<div class="infoBox" id="tests">
+-<div class="counter">3</div>
+-<p>tests</p>
+-</div>
+-</td>
+-<td>
+-<div class="infoBox" id="failures">
+-<div class="counter">0</div>
+-<p>failures</p>
+-</div>
+-</td>
+-<td>
+-<div class="infoBox" id="ignored">
+-<div class="counter">0</div>
+-<p>ignored</p>
+-</div>
+-</td>
+-<td>
+-<div class="infoBox" id="duration">
+-<div class="counter">0.168s</div>
+-<p>duration</p>
+-</div>
+-</td>
+-</tr>
+-</table>
+-</div>
+-</td>
+-<td>
+-<div class="infoBox success" id="successRate">
+-<div class="percent">100%</div>
+-<p>successful</p>
+-</div>
+-</td>
+-</tr>
+-</table>
+-</div>
+-<div id="tabs">
+-<ul class="tabLinks">
+-<li>
+-<a href="#tab0">Tests</a>
+-</li>
+-</ul>
+-<div id="tab0" class="tab">
+-<h2>Tests</h2>
+-<table>
+-<thead>
+-<tr>
+-<th>Test</th>
+-<th>Method name</th>
+-<th>Duration</th>
+-<th>Result</th>
+-</tr>
+-</thead>
+-<tr>
+-<td class="success">Test getAllRoutes - Return All Routes</td>
+-<td class="success">getAllRoutes()</td>
+-<td class="success">0.161s</td>
+-<td class="success">passed</td>
+-</tr>
+-<tr>
+-<td class="success">Test getRouteById - Route Found</td>
+-<td class="success">getRouteById_Found()</td>
+-<td class="success">0.003s</td>
+-<td class="success">passed</td>
+-</tr>
+-<tr>
+-<td class="success">Test getRouteById - Route Not Found</td>
+-<td class="success">getRouteById_NotFound()</td>
+-<td class="success">0.004s</td>
+-<td class="success">passed</td>
+-</tr>
+-</table>
+-</div>
+-</div>
+-<div id="footer">
+-<p>
+-<div>
+-<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+-<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+-</label>
+-</div>Generated by 
+-<a href="http://www.gradle.org">Gradle 8.10.2</a> at Oct 31, 2024, 4:50:05 PM</p>
+-</div>
+-</div>
+-</body>
+-</html>
+Index: build/reports/tests/test/classes/com.workshop.route.RouteApplicationTests.html
+===================================================================
+diff --git a/build/reports/tests/test/classes/com.workshop.route.RouteApplicationTests.html b/build/reports/tests/test/classes/com.workshop.route.RouteApplicationTests.html
+deleted file mode 100644
+--- a/build/reports/tests/test/classes/com.workshop.route.RouteApplicationTests.html	(revision fbd63ef65798ce83b6487e3c451b3dbdbf92ae22)
++++ /dev/null	(revision fbd63ef65798ce83b6487e3c451b3dbdbf92ae22)
+@@ -1,292 +0,0 @@
+-<!DOCTYPE html>
+-<html>
+-<head>
+-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+-<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+-<title>Test results - RouteApplicationTests</title>
+-<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+-<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+-<script src="../js/report.js" type="text/javascript"></script>
+-</head>
+-<body>
+-<div id="content">
+-<h1>RouteApplicationTests</h1>
+-<div class="breadcrumbs">
+-<a href="../index.html">all</a> &gt; 
+-<a href="../packages/com.workshop.route.html">com.workshop.route</a> &gt; RouteApplicationTests</div>
+-<div id="summary">
+-<table>
+-<tr>
+-<td>
+-<div class="summaryGroup">
+-<table>
+-<tr>
+-<td>
+-<div class="infoBox" id="tests">
+-<div class="counter">1</div>
+-<p>tests</p>
+-</div>
+-</td>
+-<td>
+-<div class="infoBox" id="failures">
+-<div class="counter">0</div>
+-<p>failures</p>
+-</div>
+-</td>
+-<td>
+-<div class="infoBox" id="ignored">
+-<div class="counter">0</div>
+-<p>ignored</p>
+-</div>
+-</td>
+-<td>
+-<div class="infoBox" id="duration">
+-<div class="counter">0.996s</div>
+-<p>duration</p>
+-</div>
+-</td>
+-</tr>
+-</table>
+-</div>
+-</td>
+-<td>
+-<div class="infoBox success" id="successRate">
+-<div class="percent">100%</div>
+-<p>successful</p>
+-</div>
+-</td>
+-</tr>
+-</table>
+-</div>
+-<div id="tabs">
+-<ul class="tabLinks">
+-<li>
+-<a href="#tab0">Tests</a>
+-</li>
+-<li>
+-<a href="#tab1">Standard output</a>
+-</li>
+-<li>
+-<a href="#tab2">Standard error</a>
+-</li>
+-</ul>
+-<div id="tab0" class="tab">
+-<h2>Tests</h2>
+-<table>
+-<thead>
+-<tr>
+-<th>Test</th>
+-<th>Duration</th>
+-<th>Result</th>
+-</tr>
+-</thead>
+-<tr>
+-<td class="success">contextLoads()</td>
+-<td class="success">0.996s</td>
+-<td class="success">passed</td>
+-</tr>
+-</table>
+-</div>
+-<div id="tab1" class="tab">
+-<h2>Standard output</h2>
+-<span class="code">
+-<pre>16:49:56.117 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.workshop.route.RouteApplicationTests]: RouteApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+-16:49:56.330 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.workshop.route.RouteApplication for test class com.workshop.route.RouteApplicationTests
+-
+-  .   ____          _            __ _ _
+- /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+-( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+- \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+-  '  |____| .__|_| |_|_| |_\__, | / / / /
+- =========|_|==============|___/=/_/_/_/
+-
+- :: Spring Boot ::                (v3.3.5)
+-
+-2024-10-31T16:49:57.139+01:00  INFO 18216 --- [route] [    Test worker] c.workshop.route.RouteApplicationTests   : Starting RouteApplicationTests using Java 21.0.5 with PID 18216 (started by aipg in C:\Coding\JavaProjects\WorkShop\Route\RouteQueryMicroservice)
+-2024-10-31T16:49:57.141+01:00  INFO 18216 --- [route] [    Test worker] c.workshop.route.RouteApplicationTests   : No active profile set, falling back to 1 default profile: &quot;default&quot;
+-2024-10-31T16:49:57.829+01:00  INFO 18216 --- [route] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Reactive MongoDB repositories in DEFAULT mode.
+-2024-10-31T16:49:58.073+01:00  INFO 18216 --- [route] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 235 ms. Found 1 Reactive MongoDB repository interface.
+-2024-10-31T16:49:59.612+01:00  INFO 18216 --- [route] [1jm.mongodb.net] org.mongodb.driver.cluster               : Adding discovered server workshop-shard-00-02.rh1jm.mongodb.net:27017 to client view of cluster
+-2024-10-31T16:49:59.642+01:00  INFO 18216 --- [route] [    Test worker] org.mongodb.driver.client                : MongoClient with metadata {&quot;driver&quot;: {&quot;name&quot;: &quot;mongo-java-driver|reactive-streams|spring-boot&quot;, &quot;version&quot;: &quot;5.0.1&quot;}, &quot;os&quot;: {&quot;type&quot;: &quot;Windows&quot;, &quot;name&quot;: &quot;Windows 11&quot;, &quot;architecture&quot;: &quot;amd64&quot;, &quot;version&quot;: &quot;10.0&quot;}, &quot;platform&quot;: &quot;Java/Oracle Corporation/21.0.5+9-LTS-jvmci-23.1-b48&quot;} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=majority, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=MongoCredential{mechanism=null, userName='nabz', source='admin', password=&lt;hidden&gt;, mechanismProperties=&lt;hidden&gt;}, transportSettings=NettyTransportSettings{eventLoopGroup=io.netty.channel.nio.NioEventLoopGroup@3345e9b2, socketChannelClass=null, allocator=null, sslContext=null}, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@57d21a0e, com.mongodb.Jep395RecordCodecProvider@25e73877, com.mongodb.KotlinCodecProvider@6462f627]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[127.0.0.1:27017], srvHost=workshop.rh1jm.mongodb.net, srvServiceName=mongodb, mode=MULTIPLE, requiredClusterType=REPLICA_SET, requiredReplicaSetName='atlas-uwoswq-shard-0', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=true, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}
+-2024-10-31T16:49:59.670+01:00  INFO 18216 --- [route] [1jm.mongodb.net] org.mongodb.driver.cluster               : Adding discovered server workshop-shard-00-00.rh1jm.mongodb.net:27017 to client view of cluster
+-2024-10-31T16:49:59.675+01:00  INFO 18216 --- [route] [1jm.mongodb.net] org.mongodb.driver.cluster               : Adding discovered server workshop-shard-00-01.rh1jm.mongodb.net:27017 to client view of cluster
+-2024-10-31T16:50:00.213+01:00  INFO 18216 --- [route] [ngodb.net:27017] org.mongodb.driver.cluster               : Exception in monitor thread while connecting to server workshop-shard-00-02.rh1jm.mongodb.net:27017
+-
+-com.mongodb.MongoSocketWriteException: Exception sending message
+-	at com.mongodb.internal.connection.InternalStreamConnection.translateWriteException(InternalStreamConnection.java:691) ~[mongodb-driver-core-5.0.1.jar:na]
+-	at com.mongodb.internal.connection.InternalStreamConnection.sendMessage(InternalStreamConnection.java:564) ~[mongodb-driver-core-5.0.1.jar:na]
+-	at com.mongodb.internal.connection.InternalStreamConnection.sendCommandMessage(InternalStreamConnection.java:396) ~[mongodb-driver-core-5.0.1.jar:na]
+-	at com.mongodb.internal.connection.InternalStreamConnection.sendAndReceive(InternalStreamConnection.java:346) ~[mongodb-driver-core-5.0.1.jar:na]
+-	at com.mongodb.internal.connection.CommandHelper.sendAndReceive(CommandHelper.java:92) ~[mongodb-driver-core-5.0.1.jar:na]
+-	at com.mongodb.internal.connection.CommandHelper.executeCommand(CommandHelper.java:48) ~[mongodb-driver-core-5.0.1.jar:na]
+-	at com.mongodb.internal.connection.InternalStreamConnectionInitializer.initializeConnectionDescription(InternalStreamConnectionInitializer.java:130) ~[mongodb-driver-core-5.0.1.jar:na]
+-	at com.mongodb.internal.connection.InternalStreamConnectionInitializer.startHandshake(InternalStreamConnectionInitializer.java:78) ~[mongodb-driver-core-5.0.1.jar:na]
+-	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:203) ~[mongodb-driver-core-5.0.1.jar:na]
+-	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:193) ~[mongodb-driver-core-5.0.1.jar:na]
+-	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:153) ~[mongodb-driver-core-5.0.1.jar:na]
+-	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+-Caused by: javax.net.ssl.SSLException: Received fatal alert: internal_error
+-	at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:132) ~[na:na]
+-	at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:117) ~[na:na]
+-	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:370) ~[na:na]
+-	at java.base/sun.security.ssl.Alert$AlertConsumer.consume(Alert.java:287) ~[na:na]
+-	at java.base/sun.security.ssl.TransportContext.dispatch(TransportContext.java:209) ~[na:na]
+-	at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:172) ~[na:na]
+-	at java.base/sun.security.ssl.SSLEngineImpl.decode(SSLEngineImpl.java:736) ~[na:na]
+-	at java.base/sun.security.ssl.SSLEngineImpl.readRecord(SSLEngineImpl.java:691) ~[na:na]
+-	at java.base/sun.security.ssl.SSLEngineImpl.unwrap(SSLEngineImpl.java:506) ~[na:na]
+-	at java.base/sun.security.ssl.SSLEngineImpl.unwrap(SSLEngineImpl.java:482) ~[na:na]
+-	at java.base/javax.net.ssl.SSLEngine.unwrap(SSLEngine.java:679) ~[na:na]
+-	at io.netty.handler.ssl.SslHandler$SslEngineType$3.unwrap(SslHandler.java:309) ~[netty-handler-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.handler.ssl.SslHandler.unwrap(SslHandler.java:1473) ~[netty-handler-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.handler.ssl.SslHandler.decodeJdkCompatible(SslHandler.java:1366) ~[netty-handler-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.handler.ssl.SslHandler.decode(SslHandler.java:1415) ~[netty-handler-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:530) ~[netty-codec-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:469) ~[netty-codec-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:290) ~[netty-codec-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1357) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:868) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+-	... 1 common frames omitted
+-
+-2024-10-31T16:50:00.213+01:00  INFO 18216 --- [route] [ngodb.net:27017] org.mongodb.driver.cluster               : Exception in monitor thread while connecting to server workshop-shard-00-00.rh1jm.mongodb.net:27017
+-
+-com.mongodb.MongoSocketWriteException: Exception sending message
+-	at com.mongodb.internal.connection.InternalStreamConnection.translateWriteException(InternalStreamConnection.java:691) ~[mongodb-driver-core-5.0.1.jar:na]
+-	at com.mongodb.internal.connection.InternalStreamConnection.sendMessage(InternalStreamConnection.java:564) ~[mongodb-driver-core-5.0.1.jar:na]
+-	at com.mongodb.internal.connection.InternalStreamConnection.sendCommandMessage(InternalStreamConnection.java:396) ~[mongodb-driver-core-5.0.1.jar:na]
+-	at com.mongodb.internal.connection.InternalStreamConnection.sendAndReceive(InternalStreamConnection.java:346) ~[mongodb-driver-core-5.0.1.jar:na]
+-	at com.mongodb.internal.connection.CommandHelper.sendAndReceive(CommandHelper.java:92) ~[mongodb-driver-core-5.0.1.jar:na]
+-	at com.mongodb.internal.connection.CommandHelper.executeCommand(CommandHelper.java:48) ~[mongodb-driver-core-5.0.1.jar:na]
+-	at com.mongodb.internal.connection.InternalStreamConnectionInitializer.initializeConnectionDescription(InternalStreamConnectionInitializer.java:130) ~[mongodb-driver-core-5.0.1.jar:na]
+-	at com.mongodb.internal.connection.InternalStreamConnectionInitializer.startHandshake(InternalStreamConnectionInitializer.java:78) ~[mongodb-driver-core-5.0.1.jar:na]
+-	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:203) ~[mongodb-driver-core-5.0.1.jar:na]
+-	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:193) ~[mongodb-driver-core-5.0.1.jar:na]
+-	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:153) ~[mongodb-driver-core-5.0.1.jar:na]
+-	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+-Caused by: javax.net.ssl.SSLException: Received fatal alert: internal_error
+-	at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:132) ~[na:na]
+-	at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:117) ~[na:na]
+-	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:370) ~[na:na]
+-	at java.base/sun.security.ssl.Alert$AlertConsumer.consume(Alert.java:287) ~[na:na]
+-	at java.base/sun.security.ssl.TransportContext.dispatch(TransportContext.java:209) ~[na:na]
+-	at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:172) ~[na:na]
+-	at java.base/sun.security.ssl.SSLEngineImpl.decode(SSLEngineImpl.java:736) ~[na:na]
+-	at java.base/sun.security.ssl.SSLEngineImpl.readRecord(SSLEngineImpl.java:691) ~[na:na]
+-	at java.base/sun.security.ssl.SSLEngineImpl.unwrap(SSLEngineImpl.java:506) ~[na:na]
+-	at java.base/sun.security.ssl.SSLEngineImpl.unwrap(SSLEngineImpl.java:482) ~[na:na]
+-	at java.base/javax.net.ssl.SSLEngine.unwrap(SSLEngine.java:679) ~[na:na]
+-	at io.netty.handler.ssl.SslHandler$SslEngineType$3.unwrap(SslHandler.java:309) ~[netty-handler-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.handler.ssl.SslHandler.unwrap(SslHandler.java:1473) ~[netty-handler-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.handler.ssl.SslHandler.decodeJdkCompatible(SslHandler.java:1366) ~[netty-handler-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.handler.ssl.SslHandler.decode(SslHandler.java:1415) ~[netty-handler-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:530) ~[netty-codec-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:469) ~[netty-codec-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:290) ~[netty-codec-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1357) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:868) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+-	... 1 common frames omitted
+-
+-2024-10-31T16:50:00.213+01:00  INFO 18216 --- [route] [ngodb.net:27017] org.mongodb.driver.cluster               : Exception in monitor thread while connecting to server workshop-shard-00-01.rh1jm.mongodb.net:27017
+-
+-com.mongodb.MongoSocketWriteException: Exception sending message
+-	at com.mongodb.internal.connection.InternalStreamConnection.translateWriteException(InternalStreamConnection.java:691) ~[mongodb-driver-core-5.0.1.jar:na]
+-	at com.mongodb.internal.connection.InternalStreamConnection.sendMessage(InternalStreamConnection.java:564) ~[mongodb-driver-core-5.0.1.jar:na]
+-	at com.mongodb.internal.connection.InternalStreamConnection.sendCommandMessage(InternalStreamConnection.java:396) ~[mongodb-driver-core-5.0.1.jar:na]
+-	at com.mongodb.internal.connection.InternalStreamConnection.sendAndReceive(InternalStreamConnection.java:346) ~[mongodb-driver-core-5.0.1.jar:na]
+-	at com.mongodb.internal.connection.CommandHelper.sendAndReceive(CommandHelper.java:92) ~[mongodb-driver-core-5.0.1.jar:na]
+-	at com.mongodb.internal.connection.CommandHelper.executeCommand(CommandHelper.java:48) ~[mongodb-driver-core-5.0.1.jar:na]
+-	at com.mongodb.internal.connection.InternalStreamConnectionInitializer.initializeConnectionDescription(InternalStreamConnectionInitializer.java:130) ~[mongodb-driver-core-5.0.1.jar:na]
+-	at com.mongodb.internal.connection.InternalStreamConnectionInitializer.startHandshake(InternalStreamConnectionInitializer.java:78) ~[mongodb-driver-core-5.0.1.jar:na]
+-	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:203) ~[mongodb-driver-core-5.0.1.jar:na]
+-	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:193) ~[mongodb-driver-core-5.0.1.jar:na]
+-	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:153) ~[mongodb-driver-core-5.0.1.jar:na]
+-	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+-Caused by: javax.net.ssl.SSLException: Received fatal alert: internal_error
+-	at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:132) ~[na:na]
+-	at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:117) ~[na:na]
+-	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:370) ~[na:na]
+-	at java.base/sun.security.ssl.Alert$AlertConsumer.consume(Alert.java:287) ~[na:na]
+-	at java.base/sun.security.ssl.TransportContext.dispatch(TransportContext.java:209) ~[na:na]
+-	at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:172) ~[na:na]
+-	at java.base/sun.security.ssl.SSLEngineImpl.decode(SSLEngineImpl.java:736) ~[na:na]
+-	at java.base/sun.security.ssl.SSLEngineImpl.readRecord(SSLEngineImpl.java:691) ~[na:na]
+-	at java.base/sun.security.ssl.SSLEngineImpl.unwrap(SSLEngineImpl.java:506) ~[na:na]
+-	at java.base/sun.security.ssl.SSLEngineImpl.unwrap(SSLEngineImpl.java:482) ~[na:na]
+-	at java.base/javax.net.ssl.SSLEngine.unwrap(SSLEngine.java:679) ~[na:na]
+-	at io.netty.handler.ssl.SslHandler$SslEngineType$3.unwrap(SslHandler.java:309) ~[netty-handler-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.handler.ssl.SslHandler.unwrap(SslHandler.java:1473) ~[netty-handler-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.handler.ssl.SslHandler.decodeJdkCompatible(SslHandler.java:1366) ~[netty-handler-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.handler.ssl.SslHandler.decode(SslHandler.java:1415) ~[netty-handler-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:530) ~[netty-codec-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:469) ~[netty-codec-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:290) ~[netty-codec-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1357) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:868) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+-	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+-	... 1 common frames omitted
+-
+-2024-10-31T16:50:01.090+01:00  INFO 18216 --- [route] [    Test worker] c.workshop.route.RouteApplicationTests   : Started RouteApplicationTests in 4.48 seconds (process running for 6.539)
+-</pre>
+-</span>
+-</div>
+-<div id="tab2" class="tab">
+-<h2>Standard error</h2>
+-<span class="code">
+-<pre>WARNING: A Java agent has been loaded dynamically (C:\Users\aipg\.gradle\caches\modules-2\files-2.1\net.bytebuddy\byte-buddy-agent\1.14.19\154da3a65b4f4a909d3e5bdec55d1b2b4cbb6ce1\byte-buddy-agent-1.14.19.jar)
+-WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+-WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+-WARNING: Dynamic loading of agents will be disallowed by default in a future release
+-</pre>
+-</span>
+-</div>
+-</div>
+-<div id="footer">
+-<p>
+-<div>
+-<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+-<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+-</label>
+-</div>Generated by 
+-<a href="http://www.gradle.org">Gradle 8.10.2</a> at Oct 31, 2024, 4:50:05 PM</p>
+-</div>
+-</div>
+-</body>
+-</html>
+Index: .idea/modules/route.main.iml
+===================================================================
+diff --git a/.idea/modules/route.main.iml b/.idea/modules/route.main.iml
+deleted file mode 100644
+--- a/.idea/modules/route.main.iml	(revision fbd63ef65798ce83b6487e3c451b3dbdbf92ae22)
++++ /dev/null	(revision fbd63ef65798ce83b6487e3c451b3dbdbf92ae22)
+@@ -1,8 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<module version="4">
+-  <component name="AdditionalModuleElements">
+-    <content url="file://$MODULE_DIR$/../../build/generated/sources/annotationProcessor/java/main">
+-      <sourceFolder url="file://$MODULE_DIR$/../../build/generated/sources/annotationProcessor/java/main" isTestSource="false" generated="true" />
+-    </content>
+-  </component>
+-</module>
+\ No newline at end of file
+Index: build/reports/tests/test/classes/com.workshop.route.application.response.builder.RouteResponseBuilderTest.html
+===================================================================
+diff --git a/build/reports/tests/test/classes/com.workshop.route.application.response.builder.RouteResponseBuilderTest.html b/build/reports/tests/test/classes/com.workshop.route.application.response.builder.RouteResponseBuilderTest.html
+deleted file mode 100644
+--- a/build/reports/tests/test/classes/com.workshop.route.application.response.builder.RouteResponseBuilderTest.html	(revision fbd63ef65798ce83b6487e3c451b3dbdbf92ae22)
++++ /dev/null	(revision fbd63ef65798ce83b6487e3c451b3dbdbf92ae22)
+@@ -1,98 +0,0 @@
+-<!DOCTYPE html>
+-<html>
+-<head>
+-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+-<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+-<title>Test results - RouteResponseBuilder Unit Tests</title>
+-<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+-<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+-<script src="../js/report.js" type="text/javascript"></script>
+-</head>
+-<body>
+-<div id="content">
+-<h1>RouteResponseBuilder Unit Tests</h1>
+-<div class="breadcrumbs">
+-<a href="../index.html">all</a> &gt; 
+-<a href="../packages/com.workshop.route.application.response.builder.html">com.workshop.route.application.response.builder</a> &gt; RouteResponseBuilderTest</div>
+-<div id="summary">
+-<table>
+-<tr>
+-<td>
+-<div class="summaryGroup">
+-<table>
+-<tr>
+-<td>
+-<div class="infoBox" id="tests">
+-<div class="counter">1</div>
+-<p>tests</p>
+-</div>
+-</td>
+-<td>
+-<div class="infoBox" id="failures">
+-<div class="counter">0</div>
+-<p>failures</p>
+-</div>
+-</td>
+-<td>
+-<div class="infoBox" id="ignored">
+-<div class="counter">0</div>
+-<p>ignored</p>
+-</div>
+-</td>
+-<td>
+-<div class="infoBox" id="duration">
+-<div class="counter">0.115s</div>
+-<p>duration</p>
+-</div>
+-</td>
+-</tr>
+-</table>
+-</div>
+-</td>
+-<td>
+-<div class="infoBox success" id="successRate">
+-<div class="percent">100%</div>
+-<p>successful</p>
+-</div>
+-</td>
+-</tr>
+-</table>
+-</div>
+-<div id="tabs">
+-<ul class="tabLinks">
+-<li>
+-<a href="#tab0">Tests</a>
+-</li>
+-</ul>
+-<div id="tab0" class="tab">
+-<h2>Tests</h2>
+-<table>
+-<thead>
+-<tr>
+-<th>Test</th>
+-<th>Method name</th>
+-<th>Duration</th>
+-<th>Result</th>
+-</tr>
+-</thead>
+-<tr>
+-<td class="success">Generate OK Response - Should Return 200 OK with Route</td>
+-<td class="success">generateOkResponse_shouldReturnOkResponse()</td>
+-<td class="success">0.115s</td>
+-<td class="success">passed</td>
+-</tr>
+-</table>
+-</div>
+-</div>
+-<div id="footer">
+-<p>
+-<div>
+-<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+-<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+-</label>
+-</div>Generated by 
+-<a href="http://www.gradle.org">Gradle 8.10.2</a> at Oct 31, 2024, 4:50:05 PM</p>
+-</div>
+-</div>
+-</body>
+-</html>
+Index: build/test-results/test/TEST-com.workshop.route.application.controller.RouteControllerTest.xml
+===================================================================
+diff --git a/build/test-results/test/TEST-com.workshop.route.application.controller.RouteControllerTest.xml b/build/test-results/test/TEST-com.workshop.route.application.controller.RouteControllerTest.xml
+deleted file mode 100644
+--- a/build/test-results/test/TEST-com.workshop.route.application.controller.RouteControllerTest.xml	(revision fbd63ef65798ce83b6487e3c451b3dbdbf92ae22)
++++ /dev/null	(revision fbd63ef65798ce83b6487e3c451b3dbdbf92ae22)
+@@ -1,13 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<testsuite name="RouteController Unit Tests" tests="2" skipped="0" failures="0" errors="0" timestamp="2024-10-31T15:50:02" hostname="GFT-9H3G1F3" time="0.346">
+-  <properties/>
+-  <testcase name="Get Route By ID - Should Return OK Response" classname="com.workshop.route.application.controller.RouteControllerTest" time="0.323"/>
+-  <testcase name="Get All Routes - Should Return OK Response for Each Route" classname="com.workshop.route.application.controller.RouteControllerTest" time="0.016"/>
+-  <system-out><![CDATA[2024-10-31T16:50:02.386+01:00  INFO 18216 --- [route] [    Test worker] c.w.r.a.controller.RouteController       : Fetching route with ID: 507f1f77bcf86cd799439011
+-2024-10-31T16:50:02.452+01:00  INFO 18216 --- [route] [    Test worker] c.w.r.a.controller.RouteController       : Successfully fetched route with ID: 507f1f77bcf86cd799439011
+-2024-10-31T16:50:02.468+01:00  INFO 18216 --- [route] [    Test worker] c.w.r.a.controller.RouteController       : Fetching all routes
+-2024-10-31T16:50:02.474+01:00  INFO 18216 --- [route] [    Test worker] c.w.r.a.controller.RouteController       : Starting to fetch all routes
+-2024-10-31T16:50:02.475+01:00  INFO 18216 --- [route] [    Test worker] c.w.r.a.controller.RouteController       : Successfully fetched all routes
+-]]></system-out>
+-  <system-err><![CDATA[]]></system-err>
+-</testsuite>
+Index: build/reports/tests/test/packages/com.workshop.route.application.response.service.html
+===================================================================
+diff --git a/build/reports/tests/test/packages/com.workshop.route.application.response.service.html b/build/reports/tests/test/packages/com.workshop.route.application.response.service.html
+deleted file mode 100644
+--- a/build/reports/tests/test/packages/com.workshop.route.application.response.service.html	(revision fbd63ef65798ce83b6487e3c451b3dbdbf92ae22)
++++ /dev/null	(revision fbd63ef65798ce83b6487e3c451b3dbdbf92ae22)
+@@ -1,103 +0,0 @@
+-<!DOCTYPE html>
+-<html>
+-<head>
+-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+-<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+-<title>Test results - Package com.workshop.route.application.response.service</title>
+-<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+-<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+-<script src="../js/report.js" type="text/javascript"></script>
+-</head>
+-<body>
+-<div id="content">
+-<h1>Package com.workshop.route.application.response.service</h1>
+-<div class="breadcrumbs">
+-<a href="../index.html">all</a> &gt; com.workshop.route.application.response.service</div>
+-<div id="summary">
+-<table>
+-<tr>
+-<td>
+-<div class="summaryGroup">
+-<table>
+-<tr>
+-<td>
+-<div class="infoBox" id="tests">
+-<div class="counter">2</div>
+-<p>tests</p>
+-</div>
+-</td>
+-<td>
+-<div class="infoBox" id="failures">
+-<div class="counter">0</div>
+-<p>failures</p>
+-</div>
+-</td>
+-<td>
+-<div class="infoBox" id="ignored">
+-<div class="counter">0</div>
+-<p>ignored</p>
+-</div>
+-</td>
+-<td>
+-<div class="infoBox" id="duration">
+-<div class="counter">0.017s</div>
+-<p>duration</p>
+-</div>
+-</td>
+-</tr>
+-</table>
+-</div>
+-</td>
+-<td>
+-<div class="infoBox success" id="successRate">
+-<div class="percent">100%</div>
+-<p>successful</p>
+-</div>
+-</td>
+-</tr>
+-</table>
+-</div>
+-<div id="tabs">
+-<ul class="tabLinks">
+-<li>
+-<a href="#tab0">Classes</a>
+-</li>
+-</ul>
+-<div id="tab0" class="tab">
+-<h2>Classes</h2>
+-<table>
+-<thead>
+-<tr>
+-<th>Class</th>
+-<th>Tests</th>
+-<th>Failures</th>
+-<th>Ignored</th>
+-<th>Duration</th>
+-<th>Success rate</th>
+-</tr>
+-</thead>
+-<tr>
+-<td class="success">
+-<a href="../classes/com.workshop.route.application.response.service.RouteResponseServiceTest.html">RouteResponseService Unit Tests</a>
+-</td>
+-<td>2</td>
+-<td>0</td>
+-<td>0</td>
+-<td>0.017s</td>
+-<td class="success">100%</td>
+-</tr>
+-</table>
+-</div>
+-</div>
+-<div id="footer">
+-<p>
+-<div>
+-<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+-<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+-</label>
+-</div>Generated by 
+-<a href="http://www.gradle.org">Gradle 8.10.2</a> at Oct 31, 2024, 4:50:05 PM</p>
+-</div>
+-</div>
+-</body>
+-</html>
+Index: build/test-results/test/TEST-com.workshop.route.application.response.builder.RouteResponseBuilderTest.xml
+===================================================================
+diff --git a/build/test-results/test/TEST-com.workshop.route.application.response.builder.RouteResponseBuilderTest.xml b/build/test-results/test/TEST-com.workshop.route.application.response.builder.RouteResponseBuilderTest.xml
+deleted file mode 100644
+--- a/build/test-results/test/TEST-com.workshop.route.application.response.builder.RouteResponseBuilderTest.xml	(revision fbd63ef65798ce83b6487e3c451b3dbdbf92ae22)
++++ /dev/null	(revision fbd63ef65798ce83b6487e3c451b3dbdbf92ae22)
+@@ -1,7 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<testsuite name="RouteResponseBuilder Unit Tests" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-10-31T15:50:02" hostname="GFT-9H3G1F3" time="0.115">
+-  <properties/>
+-  <testcase name="Generate OK Response - Should Return 200 OK with Route" classname="com.workshop.route.application.response.builder.RouteResponseBuilderTest" time="0.115"/>
+-  <system-out><![CDATA[]]></system-out>
+-  <system-err><![CDATA[]]></system-err>
+-</testsuite>
+Index: build/reports/tests/test/packages/com.workshop.route.html
+===================================================================
+diff --git a/build/reports/tests/test/packages/com.workshop.route.html b/build/reports/tests/test/packages/com.workshop.route.html
+deleted file mode 100644
+--- a/build/reports/tests/test/packages/com.workshop.route.html	(revision fbd63ef65798ce83b6487e3c451b3dbdbf92ae22)
++++ /dev/null	(revision fbd63ef65798ce83b6487e3c451b3dbdbf92ae22)
+@@ -1,103 +0,0 @@
+-<!DOCTYPE html>
+-<html>
+-<head>
+-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+-<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+-<title>Test results - Package com.workshop.route</title>
+-<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+-<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+-<script src="../js/report.js" type="text/javascript"></script>
+-</head>
+-<body>
+-<div id="content">
+-<h1>Package com.workshop.route</h1>
+-<div class="breadcrumbs">
+-<a href="../index.html">all</a> &gt; com.workshop.route</div>
+-<div id="summary">
+-<table>
+-<tr>
+-<td>
+-<div class="summaryGroup">
+-<table>
+-<tr>
+-<td>
+-<div class="infoBox" id="tests">
+-<div class="counter">1</div>
+-<p>tests</p>
+-</div>
+-</td>
+-<td>
+-<div class="infoBox" id="failures">
+-<div class="counter">0</div>
+-<p>failures</p>
+-</div>
+-</td>
+-<td>
+-<div class="infoBox" id="ignored">
+-<div class="counter">0</div>
+-<p>ignored</p>
+-</div>
+-</td>
+-<td>
+-<div class="infoBox" id="duration">
+-<div class="counter">0.996s</div>
+-<p>duration</p>
+-</div>
+-</td>
+-</tr>
+-</table>
+-</div>
+-</td>
+-<td>
+-<div class="infoBox success" id="successRate">
+-<div class="percent">100%</div>
+-<p>successful</p>
+-</div>
+-</td>
+-</tr>
+-</table>
+-</div>
+-<div id="tabs">
+-<ul class="tabLinks">
+-<li>
+-<a href="#tab0">Classes</a>
+-</li>
+-</ul>
+-<div id="tab0" class="tab">
+-<h2>Classes</h2>
+-<table>
+-<thead>
+-<tr>
+-<th>Class</th>
+-<th>Tests</th>
+-<th>Failures</th>
+-<th>Ignored</th>
+-<th>Duration</th>
+-<th>Success rate</th>
+-</tr>
+-</thead>
+-<tr>
+-<td class="success">
+-<a href="../classes/com.workshop.route.RouteApplicationTests.html">RouteApplicationTests</a>
+-</td>
+-<td>1</td>
+-<td>0</td>
+-<td>0</td>
+-<td>0.996s</td>
+-<td class="success">100%</td>
+-</tr>
+-</table>
+-</div>
+-</div>
+-<div id="footer">
+-<p>
+-<div>
+-<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+-<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+-</label>
+-</div>Generated by 
+-<a href="http://www.gradle.org">Gradle 8.10.2</a> at Oct 31, 2024, 4:50:05 PM</p>
+-</div>
+-</div>
+-</body>
+-</html>
+Index: build/test-results/test/TEST-com.workshop.route.application.services.RouteQueryServiceImplTest.xml
+===================================================================
+diff --git a/build/test-results/test/TEST-com.workshop.route.application.services.RouteQueryServiceImplTest.xml b/build/test-results/test/TEST-com.workshop.route.application.services.RouteQueryServiceImplTest.xml
+deleted file mode 100644
+--- a/build/test-results/test/TEST-com.workshop.route.application.services.RouteQueryServiceImplTest.xml	(revision fbd63ef65798ce83b6487e3c451b3dbdbf92ae22)
++++ /dev/null	(revision fbd63ef65798ce83b6487e3c451b3dbdbf92ae22)
+@@ -1,9 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<testsuite name="RouteServiceImpl Unit Tests" tests="3" skipped="0" failures="0" errors="0" timestamp="2024-10-31T15:50:02" hostname="GFT-9H3G1F3" time="0.17">
+-  <properties/>
+-  <testcase name="Test getAllRoutes - Return All Routes" classname="com.workshop.route.application.services.RouteQueryServiceImplTest" time="0.161"/>
+-  <testcase name="Test getRouteById - Route Not Found" classname="com.workshop.route.application.services.RouteQueryServiceImplTest" time="0.004"/>
+-  <testcase name="Test getRouteById - Route Found" classname="com.workshop.route.application.services.RouteQueryServiceImplTest" time="0.003"/>
+-  <system-out><![CDATA[]]></system-out>
+-  <system-err><![CDATA[]]></system-err>
+-</testsuite>
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+deleted file mode 100644
+--- a/.idea/workspace.xml	(revision fbd63ef65798ce83b6487e3c451b3dbdbf92ae22)
++++ /dev/null	(revision fbd63ef65798ce83b6487e3c451b3dbdbf92ae22)
+@@ -1,216 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="AutoImportSettings">
+-    <option name="autoReloadType" value="SELECTIVE" />
+-  </component>
+-  <component name="ChangeListManager">
+-    <list default="true" id="bec0a3e9-fb96-4817-b8cc-0a1785715161" name="Changes" comment="">
+-      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.10.2/checksums/checksums.lock" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.10.2/checksums/md5-checksums.bin" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.10.2/checksums/sha1-checksums.bin" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/com/workshop/route/application/controller/RouteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/workshop/route/application/controller/RouteController.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/java/com/workshop/route/application/controller/RouteControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/workshop/route/application/controller/RouteControllerTest.java" afterDir="false" />
+-    </list>
+-    <option name="SHOW_DIALOG" value="false" />
+-    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+-    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+-    <option name="LAST_RESOLUTION" value="IGNORE" />
+-  </component>
+-  <component name="ExternalProjectsData">
+-    <projectState path="$PROJECT_DIR$">
+-      <ProjectState />
+-    </projectState>
+-  </component>
+-  <component name="ExternalProjectsManager">
+-    <system id="GRADLE">
+-      <state>
+-        <task path="$PROJECT_DIR$">
+-          <activation />
+-        </task>
+-        <projects_view>
+-          <tree_state>
+-            <expand />
+-            <select />
+-          </tree_state>
+-        </projects_view>
+-      </state>
+-    </system>
+-  </component>
+-  <component name="FileTemplateManagerImpl">
+-    <option name="RECENT_TEMPLATES">
+-      <list>
+-        <option value="Interface" />
+-        <option value="Class" />
+-      </list>
+-    </option>
+-  </component>
+-  <component name="Git.Settings">
+-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+-  </component>
+-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+-  "lastFilter": {
+-    "state": "OPEN",
+-    "assignee": "nabzgft"
+-  }
+-}]]></component>
+-  <component name="GithubPullRequestsUISettings"><![CDATA[{
+-  "selectedUrlAndAccountId": {
+-    "url": "https://github.com/ToniGFT/RouteQueryMicroservice.git",
+-    "accountId": "57e7f1b9-2e1e-40da-a6da-90bd5769c0b6"
+-  }
+-}]]></component>
+-  <component name="ProjectColorInfo">{
+-  &quot;customColor&quot;: &quot;&quot;,
+-  &quot;associatedIndex&quot;: 3
+-}</component>
+-  <component name="ProjectId" id="2o6kg9oV7REqwpSdvzSvPInMkiJ" />
+-  <component name="ProjectLevelVcsManager">
+-    <ConfirmationsSetting value="2" id="Add" />
+-  </component>
+-  <component name="ProjectViewState">
+-    <option name="hideEmptyMiddlePackages" value="true" />
+-    <option name="showLibraryContents" value="true" />
+-  </component>
+-  <component name="PropertiesComponent"><![CDATA[{
+-  "keyToString": {
+-    "Application.RouteApplication.executor": "Run",
+-    "Gradle.RouteControllerTest.executor": "Run",
+-    "Gradle.RouteMicroservice [:com.workshop.route.RouteApplication.main()].executor": "Run",
+-    "Gradle.RouteMicroservice [dependencies].executor": "Run",
+-    "Gradle.RouteMicroservice [test].executor": "Run",
+-    "Gradle.RouteQueryServiceImplTest.executor": "Run",
+-    "Gradle.RouteResponseBuilderTest.executor": "Run",
+-    "Gradle.RouteResponseServiceTest.executor": "Run",
+-    "Gradle.Tests in 'route'.executor": "Coverage",
+-    "RunOnceActivity.ShowReadmeOnStart": "true",
+-    "git-widget-placeholder": "main",
+-    "kotlin-language-version-configured": "true",
+-    "last_directory_selection": "C:/Coding/JavaProjects/WorkShop/RouteMicroservice/src/main/java/com/workshop/route",
+-    "project.structure.last.edited": "Project",
+-    "project.structure.proportion": "0.0",
+-    "project.structure.side.proportion": "0.0",
+-    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
+-  }
+-}]]></component>
+-  <component name="RunManager" selected="Application.RouteApplication">
+-    <configuration name="RouteApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+-      <option name="MAIN_CLASS_NAME" value="com.workshop.route.RouteApplication" />
+-      <module name="route.main" />
+-      <extension name="coverage">
+-        <pattern>
+-          <option name="PATTERN" value="com.workshop.route.*" />
+-          <option name="ENABLED" value="true" />
+-        </pattern>
+-      </extension>
+-      <method v="2">
+-        <option name="Make" enabled="true" />
+-      </method>
+-    </configuration>
+-    <configuration name="RouteMicroservice [dependencies]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+-      <ExternalSystemSettings>
+-        <option name="executionName" />
+-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+-        <option name="externalSystemIdString" value="GRADLE" />
+-        <option name="scriptParameters" />
+-        <option name="taskDescriptions">
+-          <list />
+-        </option>
+-        <option name="taskNames">
+-          <list>
+-            <option value="dependencies" />
+-          </list>
+-        </option>
+-        <option name="vmOptions" />
+-      </ExternalSystemSettings>
+-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+-      <DebugAllEnabled>false</DebugAllEnabled>
+-      <RunAsTest>false</RunAsTest>
+-      <method v="2" />
+-    </configuration>
+-    <configuration name="RouteMicroservice [test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+-      <ExternalSystemSettings>
+-        <option name="executionName" />
+-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+-        <option name="externalSystemIdString" value="GRADLE" />
+-        <option name="scriptParameters" />
+-        <option name="taskDescriptions">
+-          <list />
+-        </option>
+-        <option name="taskNames">
+-          <list>
+-            <option value="test" />
+-          </list>
+-        </option>
+-        <option name="vmOptions" />
+-      </ExternalSystemSettings>
+-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+-      <DebugAllEnabled>false</DebugAllEnabled>
+-      <RunAsTest>false</RunAsTest>
+-      <method v="2" />
+-    </configuration>
+-    <configuration name="Tests in 'route'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+-      <ExternalSystemSettings>
+-        <option name="executionName" />
+-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+-        <option name="externalSystemIdString" value="GRADLE" />
+-        <option name="scriptParameters" value="" />
+-        <option name="taskDescriptions">
+-          <list />
+-        </option>
+-        <option name="taskNames">
+-          <list>
+-            <option value=":test" />
+-          </list>
+-        </option>
+-        <option name="vmOptions" />
+-      </ExternalSystemSettings>
+-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+-      <DebugAllEnabled>false</DebugAllEnabled>
+-      <RunAsTest>true</RunAsTest>
+-      <method v="2" />
+-    </configuration>
+-    <configuration default="true" type="JetRunConfigurationType">
+-      <module name="RouteMicroservice" />
+-      <method v="2">
+-        <option name="Make" enabled="true" />
+-      </method>
+-    </configuration>
+-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+-      <module name="RouteMicroservice" />
+-      <option name="filePath" />
+-      <method v="2">
+-        <option name="Make" enabled="true" />
+-      </method>
+-    </configuration>
+-    <recent_temporary>
+-      <list>
+-        <item itemvalue="Application.RouteApplication" />
+-        <item itemvalue="Gradle.Tests in 'route'" />
+-        <item itemvalue="Gradle.RouteMicroservice [test]" />
+-        <item itemvalue="Gradle.RouteMicroservice [dependencies]" />
+-      </list>
+-    </recent_temporary>
+-  </component>
+-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+-  <component name="TaskManager">
+-    <task active="true" id="Default" summary="Default task">
+-      <changelist id="bec0a3e9-fb96-4817-b8cc-0a1785715161" name="Changes" comment="" />
+-      <created>1730197522757</created>
+-      <option name="number" value="Default" />
+-      <option name="presentableId" value="Default" />
+-      <updated>1730197522757</updated>
+-    </task>
+-    <servers />
+-  </component>
+-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+-    <SUITE FILE_PATH="coverage/route$Tests_in__route_.ic" NAME="Tests in 'route' Coverage Results" MODIFIED="1730284032252" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+-  </component>
+-</project>
+\ No newline at end of file
+Index: build/reports/tests/test/classes/com.workshop.route.application.response.service.RouteResponseServiceTest.html
+===================================================================
+diff --git a/build/reports/tests/test/classes/com.workshop.route.application.response.service.RouteResponseServiceTest.html b/build/reports/tests/test/classes/com.workshop.route.application.response.service.RouteResponseServiceTest.html
+deleted file mode 100644
+--- a/build/reports/tests/test/classes/com.workshop.route.application.response.service.RouteResponseServiceTest.html	(revision fbd63ef65798ce83b6487e3c451b3dbdbf92ae22)
++++ /dev/null	(revision fbd63ef65798ce83b6487e3c451b3dbdbf92ae22)
+@@ -1,104 +0,0 @@
+-<!DOCTYPE html>
+-<html>
+-<head>
+-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+-<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+-<title>Test results - RouteResponseService Unit Tests</title>
+-<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+-<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+-<script src="../js/report.js" type="text/javascript"></script>
+-</head>
+-<body>
+-<div id="content">
+-<h1>RouteResponseService Unit Tests</h1>
+-<div class="breadcrumbs">
+-<a href="../index.html">all</a> &gt; 
+-<a href="../packages/com.workshop.route.application.response.service.html">com.workshop.route.application.response.service</a> &gt; RouteResponseServiceTest</div>
+-<div id="summary">
+-<table>
+-<tr>
+-<td>
+-<div class="summaryGroup">
+-<table>
+-<tr>
+-<td>
+-<div class="infoBox" id="tests">
+-<div class="counter">2</div>
+-<p>tests</p>
+-</div>
+-</td>
+-<td>
+-<div class="infoBox" id="failures">
+-<div class="counter">0</div>
+-<p>failures</p>
+-</div>
+-</td>
+-<td>
+-<div class="infoBox" id="ignored">
+-<div class="counter">0</div>
+-<p>ignored</p>
+-</div>
+-</td>
+-<td>
+-<div class="infoBox" id="duration">
+-<div class="counter">0.017s</div>
+-<p>duration</p>
+-</div>
+-</td>
+-</tr>
+-</table>
+-</div>
+-</td>
+-<td>
+-<div class="infoBox success" id="successRate">
+-<div class="percent">100%</div>
+-<p>successful</p>
+-</div>
+-</td>
+-</tr>
+-</table>
+-</div>
+-<div id="tabs">
+-<ul class="tabLinks">
+-<li>
+-<a href="#tab0">Tests</a>
+-</li>
+-</ul>
+-<div id="tab0" class="tab">
+-<h2>Tests</h2>
+-<table>
+-<thead>
+-<tr>
+-<th>Test</th>
+-<th>Method name</th>
+-<th>Duration</th>
+-<th>Result</th>
+-</tr>
+-</thead>
+-<tr>
+-<td class="success">Build OK Response - Should Return Mono with 200 OK</td>
+-<td class="success">buildOkResponse_shouldReturnOkResponse()</td>
+-<td class="success">0.005s</td>
+-<td class="success">passed</td>
+-</tr>
+-<tr>
+-<td class="success">Build Routes Response - Should Return Flux with 200 OK for Each Route</td>
+-<td class="success">buildRoutesResponse_shouldReturnOkResponsesForEachRoute()</td>
+-<td class="success">0.012s</td>
+-<td class="success">passed</td>
+-</tr>
+-</table>
+-</div>
+-</div>
+-<div id="footer">
+-<p>
+-<div>
+-<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+-<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+-</label>
+-</div>Generated by 
+-<a href="http://www.gradle.org">Gradle 8.10.2</a> at Oct 31, 2024, 4:50:05 PM</p>
+-</div>
+-</div>
+-</body>
+-</html>
+Index: build/reports/tests/test/index.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\r\n<html>\r\n<head>\r\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"/>\r\n<meta http-equiv=\"x-ua-compatible\" content=\"IE=edge\"/>\r\n<title>Test results - Test Summary</title>\r\n<link href=\"css/base-style.css\" rel=\"stylesheet\" type=\"text/css\"/>\r\n<link href=\"css/style.css\" rel=\"stylesheet\" type=\"text/css\"/>\r\n<script src=\"js/report.js\" type=\"text/javascript\"></script>\r\n</head>\r\n<body>\r\n<div id=\"content\">\r\n<h1>Test Summary</h1>\r\n<div id=\"summary\">\r\n<table>\r\n<tr>\r\n<td>\r\n<div class=\"summaryGroup\">\r\n<table>\r\n<tr>\r\n<td>\r\n<div class=\"infoBox\" id=\"tests\">\r\n<div class=\"counter\">9</div>\r\n<p>tests</p>\r\n</div>\r\n</td>\r\n<td>\r\n<div class=\"infoBox\" id=\"failures\">\r\n<div class=\"counter\">0</div>\r\n<p>failures</p>\r\n</div>\r\n</td>\r\n<td>\r\n<div class=\"infoBox\" id=\"ignored\">\r\n<div class=\"counter\">0</div>\r\n<p>ignored</p>\r\n</div>\r\n</td>\r\n<td>\r\n<div class=\"infoBox\" id=\"duration\">\r\n<div class=\"counter\">1.635s</div>\r\n<p>duration</p>\r\n</div>\r\n</td>\r\n</tr>\r\n</table>\r\n</div>\r\n</td>\r\n<td>\r\n<div class=\"infoBox success\" id=\"successRate\">\r\n<div class=\"percent\">100%</div>\r\n<p>successful</p>\r\n</div>\r\n</td>\r\n</tr>\r\n</table>\r\n</div>\r\n<div id=\"tabs\">\r\n<ul class=\"tabLinks\">\r\n<li>\r\n<a href=\"#tab0\">Packages</a>\r\n</li>\r\n<li>\r\n<a href=\"#tab1\">Classes</a>\r\n</li>\r\n</ul>\r\n<div id=\"tab0\" class=\"tab\">\r\n<h2>Packages</h2>\r\n<table>\r\n<thead>\r\n<tr>\r\n<th>Package</th>\r\n<th>Tests</th>\r\n<th>Failures</th>\r\n<th>Ignored</th>\r\n<th>Duration</th>\r\n<th>Success rate</th>\r\n</tr>\r\n</thead>\r\n<tbody>\r\n<tr>\r\n<td class=\"success\">\r\n<a href=\"packages/com.workshop.route.html\">com.workshop.route</a>\r\n</td>\r\n<td>1</td>\r\n<td>0</td>\r\n<td>0</td>\r\n<td>0.996s</td>\r\n<td class=\"success\">100%</td>\r\n</tr>\r\n<tr>\r\n<td class=\"success\">\r\n<a href=\"packages/com.workshop.route.application.controller.html\">com.workshop.route.application.controller</a>\r\n</td>\r\n<td>2</td>\r\n<td>0</td>\r\n<td>0</td>\r\n<td>0.339s</td>\r\n<td class=\"success\">100%</td>\r\n</tr>\r\n<tr>\r\n<td class=\"success\">\r\n<a href=\"packages/com.workshop.route.application.response.builder.html\">com.workshop.route.application.response.builder</a>\r\n</td>\r\n<td>1</td>\r\n<td>0</td>\r\n<td>0</td>\r\n<td>0.115s</td>\r\n<td class=\"success\">100%</td>\r\n</tr>\r\n<tr>\r\n<td class=\"success\">\r\n<a href=\"packages/com.workshop.route.application.response.service.html\">com.workshop.route.application.response.service</a>\r\n</td>\r\n<td>2</td>\r\n<td>0</td>\r\n<td>0</td>\r\n<td>0.017s</td>\r\n<td class=\"success\">100%</td>\r\n</tr>\r\n<tr>\r\n<td class=\"success\">\r\n<a href=\"packages/com.workshop.route.application.services.html\">com.workshop.route.application.services</a>\r\n</td>\r\n<td>3</td>\r\n<td>0</td>\r\n<td>0</td>\r\n<td>0.168s</td>\r\n<td class=\"success\">100%</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n</div>\r\n<div id=\"tab1\" class=\"tab\">\r\n<h2>Classes</h2>\r\n<table>\r\n<thead>\r\n<tr>\r\n<th>Class</th>\r\n<th>Tests</th>\r\n<th>Failures</th>\r\n<th>Ignored</th>\r\n<th>Duration</th>\r\n<th>Success rate</th>\r\n</tr>\r\n</thead>\r\n<tbody>\r\n<tr>\r\n<td class=\"success\">\r\n<a href=\"classes/com.workshop.route.RouteApplicationTests.html\">com.workshop.route.RouteApplicationTests</a>\r\n</td>\r\n<td>1</td>\r\n<td>0</td>\r\n<td>0</td>\r\n<td>0.996s</td>\r\n<td class=\"success\">100%</td>\r\n</tr>\r\n<tr>\r\n<td class=\"success\">\r\n<a href=\"classes/com.workshop.route.application.controller.RouteControllerTest.html\">com.workshop.route.application.controller.RouteControllerTest</a>\r\n</td>\r\n<td>2</td>\r\n<td>0</td>\r\n<td>0</td>\r\n<td>0.339s</td>\r\n<td class=\"success\">100%</td>\r\n</tr>\r\n<tr>\r\n<td class=\"success\">\r\n<a href=\"classes/com.workshop.route.application.response.builder.RouteResponseBuilderTest.html\">com.workshop.route.application.response.builder.RouteResponseBuilderTest</a>\r\n</td>\r\n<td>1</td>\r\n<td>0</td>\r\n<td>0</td>\r\n<td>0.115s</td>\r\n<td class=\"success\">100%</td>\r\n</tr>\r\n<tr>\r\n<td class=\"success\">\r\n<a href=\"classes/com.workshop.route.application.response.service.RouteResponseServiceTest.html\">com.workshop.route.application.response.service.RouteResponseServiceTest</a>\r\n</td>\r\n<td>2</td>\r\n<td>0</td>\r\n<td>0</td>\r\n<td>0.017s</td>\r\n<td class=\"success\">100%</td>\r\n</tr>\r\n<tr>\r\n<td class=\"success\">\r\n<a href=\"classes/com.workshop.route.application.services.RouteQueryServiceImplTest.html\">com.workshop.route.application.services.RouteQueryServiceImplTest</a>\r\n</td>\r\n<td>3</td>\r\n<td>0</td>\r\n<td>0</td>\r\n<td>0.168s</td>\r\n<td class=\"success\">100%</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n</div>\r\n</div>\r\n<div id=\"footer\">\r\n<p>\r\n<div>\r\n<label class=\"hidden\" id=\"label-for-line-wrapping-toggle\" for=\"line-wrapping-toggle\">Wrap lines\r\n<input id=\"line-wrapping-toggle\" type=\"checkbox\" autocomplete=\"off\"/>\r\n</label>\r\n</div>Generated by \r\n<a href=\"http://www.gradle.org\">Gradle 8.10.2</a> at Oct 31, 2024, 4:50:05 PM</p>\r\n</div>\r\n</div>\r\n</body>\r\n</html>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/build/reports/tests/test/index.html b/build/reports/tests/test/index.html
+--- a/build/reports/tests/test/index.html	(revision fbd63ef65798ce83b6487e3c451b3dbdbf92ae22)
++++ b/build/reports/tests/test/index.html	(date 1730719183727)
+@@ -20,13 +20,13 @@
+ <tr>
+ <td>
+ <div class="infoBox" id="tests">
+-<div class="counter">9</div>
++<div class="counter">3</div>
+ <p>tests</p>
+ </div>
+ </td>
+ <td>
+ <div class="infoBox" id="failures">
+-<div class="counter">0</div>
++<div class="counter">1</div>
+ <p>failures</p>
+ </div>
+ </td>
+@@ -38,7 +38,7 @@
+ </td>
+ <td>
+ <div class="infoBox" id="duration">
+-<div class="counter">1.635s</div>
++<div class="counter">2.321s</div>
+ <p>duration</p>
+ </div>
+ </td>
+@@ -47,8 +47,8 @@
+ </div>
+ </td>
+ <td>
+-<div class="infoBox success" id="successRate">
+-<div class="percent">100%</div>
++<div class="infoBox failures" id="successRate">
++<div class="percent">66%</div>
+ <p>successful</p>
+ </div>
+ </td>
+@@ -58,13 +58,25 @@
+ <div id="tabs">
+ <ul class="tabLinks">
+ <li>
+-<a href="#tab0">Packages</a>
++<a href="#tab0">Failed tests</a>
++</li>
++<li>
++<a href="#tab1">Packages</a>
+ </li>
+ <li>
+-<a href="#tab1">Classes</a>
++<a href="#tab2">Classes</a>
+ </li>
+ </ul>
+ <div id="tab0" class="tab">
++<h2>Failed tests</h2>
++<ul class="linkList">
++<li>
++<a href="classes/com.workshop.route.application.controller.ControllerIntegrationTest.html">ControllerIntegrationTest</a>.
++<a href="classes/com.workshop.route.application.controller.ControllerIntegrationTest.html#testGetRouteById_Success()">testGetRouteById_Success()</a>
++</li>
++</ul>
++</div>
++<div id="tab1" class="tab">
+ <h2>Packages</h2>
+ <table>
+ <thead>
+@@ -79,59 +91,19 @@
+ </thead>
+ <tbody>
+ <tr>
+-<td class="success">
+-<a href="packages/com.workshop.route.html">com.workshop.route</a>
+-</td>
+-<td>1</td>
+-<td>0</td>
+-<td>0</td>
+-<td>0.996s</td>
+-<td class="success">100%</td>
+-</tr>
+-<tr>
+-<td class="success">
++<td class="failures">
+ <a href="packages/com.workshop.route.application.controller.html">com.workshop.route.application.controller</a>
+ </td>
+-<td>2</td>
+-<td>0</td>
+-<td>0</td>
+-<td>0.339s</td>
+-<td class="success">100%</td>
+-</tr>
+-<tr>
+-<td class="success">
+-<a href="packages/com.workshop.route.application.response.builder.html">com.workshop.route.application.response.builder</a>
+-</td>
++<td>3</td>
+ <td>1</td>
+ <td>0</td>
+-<td>0</td>
+-<td>0.115s</td>
+-<td class="success">100%</td>
+-</tr>
+-<tr>
+-<td class="success">
+-<a href="packages/com.workshop.route.application.response.service.html">com.workshop.route.application.response.service</a>
+-</td>
+-<td>2</td>
+-<td>0</td>
+-<td>0</td>
+-<td>0.017s</td>
+-<td class="success">100%</td>
+-</tr>
+-<tr>
+-<td class="success">
+-<a href="packages/com.workshop.route.application.services.html">com.workshop.route.application.services</a>
+-</td>
+-<td>3</td>
+-<td>0</td>
+-<td>0</td>
+-<td>0.168s</td>
+-<td class="success">100%</td>
++<td>2.321s</td>
++<td class="failures">66%</td>
+ </tr>
+ </tbody>
+ </table>
+ </div>
+-<div id="tab1" class="tab">
++<div id="tab2" class="tab">
+ <h2>Classes</h2>
+ <table>
+ <thead>
+@@ -146,54 +118,14 @@
+ </thead>
+ <tbody>
+ <tr>
+-<td class="success">
+-<a href="classes/com.workshop.route.RouteApplicationTests.html">com.workshop.route.RouteApplicationTests</a>
+-</td>
+-<td>1</td>
+-<td>0</td>
+-<td>0</td>
+-<td>0.996s</td>
+-<td class="success">100%</td>
+-</tr>
+-<tr>
+-<td class="success">
+-<a href="classes/com.workshop.route.application.controller.RouteControllerTest.html">com.workshop.route.application.controller.RouteControllerTest</a>
+-</td>
+-<td>2</td>
+-<td>0</td>
+-<td>0</td>
+-<td>0.339s</td>
+-<td class="success">100%</td>
+-</tr>
+-<tr>
+-<td class="success">
+-<a href="classes/com.workshop.route.application.response.builder.RouteResponseBuilderTest.html">com.workshop.route.application.response.builder.RouteResponseBuilderTest</a>
+-</td>
+-<td>1</td>
+-<td>0</td>
+-<td>0</td>
+-<td>0.115s</td>
+-<td class="success">100%</td>
+-</tr>
+-<tr>
+-<td class="success">
+-<a href="classes/com.workshop.route.application.response.service.RouteResponseServiceTest.html">com.workshop.route.application.response.service.RouteResponseServiceTest</a>
+-</td>
+-<td>2</td>
+-<td>0</td>
+-<td>0</td>
+-<td>0.017s</td>
+-<td class="success">100%</td>
+-</tr>
+-<tr>
+-<td class="success">
+-<a href="classes/com.workshop.route.application.services.RouteQueryServiceImplTest.html">com.workshop.route.application.services.RouteQueryServiceImplTest</a>
++<td class="failures">
++<a href="classes/com.workshop.route.application.controller.ControllerIntegrationTest.html">com.workshop.route.application.controller.ControllerIntegrationTest</a>
+ </td>
+ <td>3</td>
++<td>1</td>
+ <td>0</td>
+-<td>0</td>
+-<td>0.168s</td>
+-<td class="success">100%</td>
++<td>2.321s</td>
++<td class="failures">66%</td>
+ </tr>
+ </tbody>
+ </table>
+@@ -206,7 +138,7 @@
+ <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+ </label>
+ </div>Generated by 
+-<a href="http://www.gradle.org">Gradle 8.10.2</a> at Oct 31, 2024, 4:50:05 PM</p>
++<a href="http://www.gradle.org">Gradle 8.10.2</a> at Nov 4, 2024, 12:19:17 PM</p>
+ </div>
+ </div>
+ </body>
+Index: src/test/java/com/workshop/route/application/controller/ControllerIntegrationTest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/test/java/com/workshop/route/application/controller/ControllerIntegrationTest.java b/src/test/java/com/workshop/route/application/controller/ControllerIntegrationTest.java
+new file mode 100644
+--- /dev/null	(date 1730725101998)
++++ b/src/test/java/com/workshop/route/application/controller/ControllerIntegrationTest.java	(date 1730725101998)
+@@ -0,0 +1,102 @@
++package com.workshop.route.application.controller;
++
++import com.workshop.route.application.response.service.RouteResponseService;
++import com.workshop.route.application.services.RouteQueryServiceImpl;
++import com.workshop.route.domain.model.aggregates.Route;
++import com.workshop.route.domain.model.entities.Schedule;
++import com.workshop.route.domain.model.entities.Stop;
++import com.workshop.route.domain.model.valueobjects.Coordinates;
++import com.workshop.route.domain.model.valueobjects.WeekSchedule;
++import java.time.LocalTime;
++import java.util.List;
++
++import com.workshop.route.domain.repository.RouteQueryRepository;
++import org.bson.types.ObjectId;
++import org.junit.jupiter.api.BeforeEach;
++import org.junit.jupiter.api.Test;
++import org.springframework.beans.factory.annotation.Autowired;
++import org.springframework.boot.test.autoconfigure.web.reactive.AutoConfigureWebTestClient;
++import org.springframework.boot.test.context.SpringBootTest;
++import org.springframework.boot.test.context.SpringBootTest.WebEnvironment;
++import org.springframework.boot.test.mock.mockito.MockBean;
++import org.springframework.http.ResponseEntity;
++import org.springframework.test.web.reactive.server.WebTestClient;
++import reactor.core.publisher.Mono;
++import static org.mockito.Mockito.when;
++
++@SpringBootTest(webEnvironment = WebEnvironment.RANDOM_PORT)
++@AutoConfigureWebTestClient
++public class ControllerIntegrationTest {
++    @Autowired
++    private WebTestClient webTestClient;
++
++    @MockBean
++    private RouteResponseService routeResponseService;
++
++    @MockBean
++    private RouteQueryRepository routeRepository;
++
++    @MockBean
++    private RouteQueryServiceImpl routeQueryService;
++
++
++    private Route route1;
++    private final ObjectId fixedRouteId = new ObjectId("67239211c155403cc8995fc1");
++
++
++    @BeforeEach
++    void setUp() {
++        this.route1 = new Route(this.fixedRouteId, "Route 1", List.of(new Stop("1", "Main Square", new Coordinates(40.4168, -3.7038), List.of("08:00", "12:00", "18:00"))), new Schedule(new WeekSchedule(LocalTime.of(8, 0), LocalTime.of(18, 0), 30), new WeekSchedule(LocalTime.of(10, 0), LocalTime.of(14, 0), 60)));
++    }
++
++    @Test
++    void testGetRouteById_Success() {
++        when(routeRepository.findById(fixedRouteId)).thenReturn(Mono.just(route1));
++        when(routeQueryService.getRouteById(fixedRouteId)).thenReturn(Mono.just(route1));
++        when(routeResponseService.buildOkResponse(route1)).thenReturn(Mono.just(ResponseEntity.ok(route1)));
++
++        webTestClient.get()
++                .uri("/routes/{_id}", fixedRouteId.toHexString())
++                .exchange()
++                .expectStatus().isOk()
++                .expectBody(Route.class)
++                .consumeWith(response -> {
++                    Route actualRoute = response.getResponseBody();
++                    assert actualRoute != null;
++                    System.out.println("Actual route ID: " + actualRoute.getRouteId().toHexString());
++                })
++                .isEqualTo(route1);
++    }
++/*
++    @Test
++    void testGetRouteById_NotFound() {
++        ObjectId routeId = new ObjectId();
++        when(routeRepository.findById(routeId)).thenReturn(Mono.empty());
++
++        webTestClient.get()
++                .uri("/routes/{_id}", routeId)
++                .exchange()
++                .expectStatus()
++                .isNotFound();
++    }
++    @Test
++    void testGetAllRoutes() {
++        Route route1 = new Route();
++        Route route2 = new Route();
++        Flux<Route> routeFlux = Flux.just(route1, route2);
++
++        when(routeRepository.findAll()).thenReturn(routeFlux);
++        when(routeResponseService.buildRoutesResponse(route1)).thenReturn(Flux.just(ResponseEntity.ok(route1)));
++        when(routeResponseService.buildRoutesResponse(route2)).thenReturn(Flux.just(ResponseEntity.ok(route2)));
++
++        this.webTestClient.get()
++                .uri("/routes")
++                .exchange()
++                .expectStatus().isOk()
++                .expectBodyList(Route.class)
++                .hasSize(2)
++                .contains(route1, route2);
++    }
++
++ */
++}
+Index: build/reports/tests/test/packages/com.workshop.route.application.controller.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\r\n<html>\r\n<head>\r\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"/>\r\n<meta http-equiv=\"x-ua-compatible\" content=\"IE=edge\"/>\r\n<title>Test results - Package com.workshop.route.application.controller</title>\r\n<link href=\"../css/base-style.css\" rel=\"stylesheet\" type=\"text/css\"/>\r\n<link href=\"../css/style.css\" rel=\"stylesheet\" type=\"text/css\"/>\r\n<script src=\"../js/report.js\" type=\"text/javascript\"></script>\r\n</head>\r\n<body>\r\n<div id=\"content\">\r\n<h1>Package com.workshop.route.application.controller</h1>\r\n<div class=\"breadcrumbs\">\r\n<a href=\"../index.html\">all</a> &gt; com.workshop.route.application.controller</div>\r\n<div id=\"summary\">\r\n<table>\r\n<tr>\r\n<td>\r\n<div class=\"summaryGroup\">\r\n<table>\r\n<tr>\r\n<td>\r\n<div class=\"infoBox\" id=\"tests\">\r\n<div class=\"counter\">2</div>\r\n<p>tests</p>\r\n</div>\r\n</td>\r\n<td>\r\n<div class=\"infoBox\" id=\"failures\">\r\n<div class=\"counter\">0</div>\r\n<p>failures</p>\r\n</div>\r\n</td>\r\n<td>\r\n<div class=\"infoBox\" id=\"ignored\">\r\n<div class=\"counter\">0</div>\r\n<p>ignored</p>\r\n</div>\r\n</td>\r\n<td>\r\n<div class=\"infoBox\" id=\"duration\">\r\n<div class=\"counter\">0.339s</div>\r\n<p>duration</p>\r\n</div>\r\n</td>\r\n</tr>\r\n</table>\r\n</div>\r\n</td>\r\n<td>\r\n<div class=\"infoBox success\" id=\"successRate\">\r\n<div class=\"percent\">100%</div>\r\n<p>successful</p>\r\n</div>\r\n</td>\r\n</tr>\r\n</table>\r\n</div>\r\n<div id=\"tabs\">\r\n<ul class=\"tabLinks\">\r\n<li>\r\n<a href=\"#tab0\">Classes</a>\r\n</li>\r\n</ul>\r\n<div id=\"tab0\" class=\"tab\">\r\n<h2>Classes</h2>\r\n<table>\r\n<thead>\r\n<tr>\r\n<th>Class</th>\r\n<th>Tests</th>\r\n<th>Failures</th>\r\n<th>Ignored</th>\r\n<th>Duration</th>\r\n<th>Success rate</th>\r\n</tr>\r\n</thead>\r\n<tr>\r\n<td class=\"success\">\r\n<a href=\"../classes/com.workshop.route.application.controller.RouteControllerTest.html\">RouteController Unit Tests</a>\r\n</td>\r\n<td>2</td>\r\n<td>0</td>\r\n<td>0</td>\r\n<td>0.339s</td>\r\n<td class=\"success\">100%</td>\r\n</tr>\r\n</table>\r\n</div>\r\n</div>\r\n<div id=\"footer\">\r\n<p>\r\n<div>\r\n<label class=\"hidden\" id=\"label-for-line-wrapping-toggle\" for=\"line-wrapping-toggle\">Wrap lines\r\n<input id=\"line-wrapping-toggle\" type=\"checkbox\" autocomplete=\"off\"/>\r\n</label>\r\n</div>Generated by \r\n<a href=\"http://www.gradle.org\">Gradle 8.10.2</a> at Oct 31, 2024, 4:50:05 PM</p>\r\n</div>\r\n</div>\r\n</body>\r\n</html>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/build/reports/tests/test/packages/com.workshop.route.application.controller.html b/build/reports/tests/test/packages/com.workshop.route.application.controller.html
+--- a/build/reports/tests/test/packages/com.workshop.route.application.controller.html	(revision fbd63ef65798ce83b6487e3c451b3dbdbf92ae22)
++++ b/build/reports/tests/test/packages/com.workshop.route.application.controller.html	(date 1730719183794)
+@@ -22,13 +22,13 @@
+ <tr>
+ <td>
+ <div class="infoBox" id="tests">
+-<div class="counter">2</div>
++<div class="counter">3</div>
+ <p>tests</p>
+ </div>
+ </td>
+ <td>
+ <div class="infoBox" id="failures">
+-<div class="counter">0</div>
++<div class="counter">1</div>
+ <p>failures</p>
+ </div>
+ </td>
+@@ -40,7 +40,7 @@
+ </td>
+ <td>
+ <div class="infoBox" id="duration">
+-<div class="counter">0.339s</div>
++<div class="counter">2.321s</div>
+ <p>duration</p>
+ </div>
+ </td>
+@@ -49,8 +49,8 @@
+ </div>
+ </td>
+ <td>
+-<div class="infoBox success" id="successRate">
+-<div class="percent">100%</div>
++<div class="infoBox failures" id="successRate">
++<div class="percent">66%</div>
+ <p>successful</p>
+ </div>
+ </td>
+@@ -60,10 +60,22 @@
+ <div id="tabs">
+ <ul class="tabLinks">
+ <li>
+-<a href="#tab0">Classes</a>
++<a href="#tab0">Failed tests</a>
++</li>
++<li>
++<a href="#tab1">Classes</a>
+ </li>
+ </ul>
+ <div id="tab0" class="tab">
++<h2>Failed tests</h2>
++<ul class="linkList">
++<li>
++<a href="../classes/com.workshop.route.application.controller.ControllerIntegrationTest.html">ControllerIntegrationTest</a>.
++<a href="../classes/com.workshop.route.application.controller.ControllerIntegrationTest.html#testGetRouteById_Success()">testGetRouteById_Success()</a>
++</li>
++</ul>
++</div>
++<div id="tab1" class="tab">
+ <h2>Classes</h2>
+ <table>
+ <thead>
+@@ -77,14 +89,14 @@
+ </tr>
+ </thead>
+ <tr>
+-<td class="success">
+-<a href="../classes/com.workshop.route.application.controller.RouteControllerTest.html">RouteController Unit Tests</a>
++<td class="failures">
++<a href="../classes/com.workshop.route.application.controller.ControllerIntegrationTest.html">ControllerIntegrationTest</a>
+ </td>
+-<td>2</td>
++<td>3</td>
++<td>1</td>
+ <td>0</td>
+-<td>0</td>
+-<td>0.339s</td>
+-<td class="success">100%</td>
++<td>2.321s</td>
++<td class="failures">66%</td>
+ </tr>
+ </table>
+ </div>
+@@ -96,7 +108,7 @@
+ <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+ </label>
+ </div>Generated by 
+-<a href="http://www.gradle.org">Gradle 8.10.2</a> at Oct 31, 2024, 4:50:05 PM</p>
++<a href="http://www.gradle.org">Gradle 8.10.2</a> at Nov 4, 2024, 12:19:17 PM</p>
+ </div>
+ </div>
+ </body>
