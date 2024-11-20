@@ -1,18 +1,21 @@
 spring:
-    application:
-        name: route
-    data:
-        mongodb:
-            uri: mongodb+srv://nabz:nabz@workshop.rh1jm.mongodb.net/Workshop?retryWrites=true&w=majority
-    kafka:
-        bootstrap-servers: localhost:9092
-        producer:
-            key-serializer: org.apache.kafka.common.serialization.StringSerializer
-            value-serializer: org.apache.kafka.common.serialization.StringSerializer
-
-scheduling:
-    enabled: true
+  application:
+    name: route
+  data:
+    mongodb:
+      uri: mongodb+srv://nabz:nabz@workshop.rh1jm.mongodb.net/Workshop?retryWrites=true&w=majority
+  kafka:
+    bootstrap-servers: localhost:9092
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+    consumer:
+      group-id: route-query-group
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      auto-offset-reset: earliest
+      enable-auto-commit: true
 
 kafka:
-    topics:
-        route-events: route-events
+  topics:
+    route-events: route-events
