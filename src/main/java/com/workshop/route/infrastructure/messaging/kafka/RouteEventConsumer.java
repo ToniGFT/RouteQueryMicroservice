@@ -1,6 +1,7 @@
 package com.workshop.route.infrastructure.messaging.kafka;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.workshop.route.infrastructure.messaging.kafka.strategies.EventProcessorRegistry;
 import jakarta.annotation.PostConstruct;
@@ -10,6 +11,9 @@ import org.springframework.stereotype.Component;
 import reactor.core.publisher.Mono;
 import reactor.kafka.receiver.KafkaReceiver;
 import reactor.kafka.receiver.ReceiverOptions;
+import reactor.util.retry.Retry;
+
+import java.time.Duration;
 
 @Component
 public class RouteEventConsumer {
@@ -36,18 +40,27 @@ public class RouteEventConsumer {
                     String message = record.value();
                     try {
                         String eventType = extractEventType(message);
-                        return eventProcessorRegistry.process(eventType, message);
+                        return eventProcessorRegistry.process(eventType, message)
+                                .doOnSuccess(success -> record.receiverOffset().acknowledge())
+                                .retryWhen(Retry.fixedDelay(3, Duration.ofSeconds(5)));
                     } catch (Exception e) {
-                        return Mono.error(new RuntimeException("Failed to process record", e));
+                        logger.error("Failed to process record: {}", e.getMessage());
+                        record.receiverOffset().acknowledge();
+                        return Mono.empty();
                     }
                 })
-                .onErrorContinue((e, o) -> {
-                    logger.error("Error processing record: {}", e.getMessage(), e);
+                .doOnError(e -> logger.error("Global error in Kafka consumer: {}", e.getMessage(), e))
+                .onErrorContinue((throwable, object) -> {
+                    logger.error("Skipping record due to error: {}", throwable.getMessage());
                 })
                 .subscribe();
     }
 
     private String extractEventType(String message) throws JsonProcessingException {
-        return objectMapper.readTree(message).get("type").asText();
+        JsonNode node = objectMapper.readTree(message);
+        if (!node.has("type")) {
+            throw new IllegalArgumentException("Message does not contain 'type' field");
+        }
+        return node.get("type").asText();
     }
 }

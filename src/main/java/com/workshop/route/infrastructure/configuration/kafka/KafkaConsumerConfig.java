@@ -1,4 +1,4 @@
-package com.workshop.route.infrastructure.config;
+package com.workshop.route.infrastructure.configuration.kafka;
 
 import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.common.serialization.StringDeserializer;
@@ -31,6 +31,10 @@ public class KafkaConsumerConfig {
         consumerProps.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class);
         consumerProps.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class);
         consumerProps.put(ConsumerConfig.AUTO_OFFSET_RESET_CONFIG, "earliest");
+        consumerProps.put(ConsumerConfig.FETCH_MIN_BYTES_CONFIG, 1);
+        consumerProps.put(ConsumerConfig.FETCH_MAX_WAIT_MS_CONFIG, 500);
+        consumerProps.put(ConsumerConfig.MAX_POLL_RECORDS_CONFIG, 10);
+
 
         return ReceiverOptions.<String, String>create(consumerProps)
                 .subscription(List.of(routeEventsTopic));
