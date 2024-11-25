@@ -3,9 +3,9 @@ spring:
     name: route
   data:
     mongodb:
-      uri: mongodb+srv://nabz:nabz@workshop.rh1jm.mongodb.net/Workshop?retryWrites=true&w=majority
+      uri: mongodb+srv://nuriamongodb:NoD7XFXMhzBWEZsb@cluster0.dmnaa.mongodb.net/Workshop?retryWrites=true&w=majority
   kafka:
-    bootstrap-servers: 192.168.1.38:9092
+    bootstrap-servers: 127.0.0.1:9092
     producer:
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
       value-serializer: org.apache.kafka.common.serialization.StringSerializer
