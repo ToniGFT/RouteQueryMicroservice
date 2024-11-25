@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="RouteResponseService Unit Tests" tests="2" skipped="0" failures="0" errors="0" timestamp="2024-10-31T15:50:02" hostname="GFT-9H3G1F3" time="0.018">
+<testsuite name="RouteResponseService Unit Tests" tests="2" skipped="0" failures="0" errors="0" timestamp="2024-11-25T12:05:09" hostname="GFT-9H3G1F3" time="0.016">
   <properties/>
   <testcase name="Build Routes Response - Should Return Flux with 200 OK for Each Route" classname="com.workshop.route.application.response.service.RouteResponseServiceTest" time="0.012"/>
-  <testcase name="Build OK Response - Should Return Mono with 200 OK" classname="com.workshop.route.application.response.service.RouteResponseServiceTest" time="0.005"/>
+  <testcase name="Build OK Response - Should Return Mono with 200 OK" classname="com.workshop.route.application.response.service.RouteResponseServiceTest" time="0.003"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

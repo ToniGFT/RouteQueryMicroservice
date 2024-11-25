@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="RouteResponseBuilder Unit Tests" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-10-31T15:50:02" hostname="GFT-9H3G1F3" time="0.115">
+<testsuite name="RouteResponseBuilder Unit Tests" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-11-25T12:05:09" hostname="GFT-9H3G1F3" time="0.197">
   <properties/>
-  <testcase name="Generate OK Response - Should Return 200 OK with Route" classname="com.workshop.route.application.response.builder.RouteResponseBuilderTest" time="0.115"/>
+  <testcase name="Generate OK Response - Should Return 200 OK with Route" classname="com.workshop.route.application.response.builder.RouteResponseBuilderTest" time="0.197"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.996s</div>
+<div class="counter">1.336s</div>
 <p>duration</p>
 </div>
 </td>
@@ -82,7 +82,7 @@
 </thead>
 <tr>
 <td class="success">contextLoads()</td>
-<td class="success">0.996s</td>
+<td class="success">1.336s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -90,8 +90,8 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>16:49:56.117 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.workshop.route.RouteApplicationTests]: RouteApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-16:49:56.330 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.workshop.route.RouteApplication for test class com.workshop.route.RouteApplicationTests
+<pre>13:04:52.632 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.workshop.route.RouteApplicationTests]: RouteApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+13:04:52.887 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.workshop.route.RouteApplication for test class com.workshop.route.RouteApplicationTests
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -102,168 +102,123 @@
 
  :: Spring Boot ::                (v3.3.5)
 
-2024-10-31T16:49:57.139+01:00  INFO 18216 --- [route] [    Test worker] c.workshop.route.RouteApplicationTests   : Starting RouteApplicationTests using Java 21.0.5 with PID 18216 (started by aipg in C:\Coding\JavaProjects\WorkShop\Route\RouteQueryMicroservice)
-2024-10-31T16:49:57.141+01:00  INFO 18216 --- [route] [    Test worker] c.workshop.route.RouteApplicationTests   : No active profile set, falling back to 1 default profile: &quot;default&quot;
-2024-10-31T16:49:57.829+01:00  INFO 18216 --- [route] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Reactive MongoDB repositories in DEFAULT mode.
-2024-10-31T16:49:58.073+01:00  INFO 18216 --- [route] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 235 ms. Found 1 Reactive MongoDB repository interface.
-2024-10-31T16:49:59.612+01:00  INFO 18216 --- [route] [1jm.mongodb.net] org.mongodb.driver.cluster               : Adding discovered server workshop-shard-00-02.rh1jm.mongodb.net:27017 to client view of cluster
-2024-10-31T16:49:59.642+01:00  INFO 18216 --- [route] [    Test worker] org.mongodb.driver.client                : MongoClient with metadata {&quot;driver&quot;: {&quot;name&quot;: &quot;mongo-java-driver|reactive-streams|spring-boot&quot;, &quot;version&quot;: &quot;5.0.1&quot;}, &quot;os&quot;: {&quot;type&quot;: &quot;Windows&quot;, &quot;name&quot;: &quot;Windows 11&quot;, &quot;architecture&quot;: &quot;amd64&quot;, &quot;version&quot;: &quot;10.0&quot;}, &quot;platform&quot;: &quot;Java/Oracle Corporation/21.0.5+9-LTS-jvmci-23.1-b48&quot;} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=majority, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=MongoCredential{mechanism=null, userName='nabz', source='admin', password=&lt;hidden&gt;, mechanismProperties=&lt;hidden&gt;}, transportSettings=NettyTransportSettings{eventLoopGroup=io.netty.channel.nio.NioEventLoopGroup@3345e9b2, socketChannelClass=null, allocator=null, sslContext=null}, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@57d21a0e, com.mongodb.Jep395RecordCodecProvider@25e73877, com.mongodb.KotlinCodecProvider@6462f627]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[127.0.0.1:27017], srvHost=workshop.rh1jm.mongodb.net, srvServiceName=mongodb, mode=MULTIPLE, requiredClusterType=REPLICA_SET, requiredReplicaSetName='atlas-uwoswq-shard-0', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=true, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}
-2024-10-31T16:49:59.670+01:00  INFO 18216 --- [route] [1jm.mongodb.net] org.mongodb.driver.cluster               : Adding discovered server workshop-shard-00-00.rh1jm.mongodb.net:27017 to client view of cluster
-2024-10-31T16:49:59.675+01:00  INFO 18216 --- [route] [1jm.mongodb.net] org.mongodb.driver.cluster               : Adding discovered server workshop-shard-00-01.rh1jm.mongodb.net:27017 to client view of cluster
-2024-10-31T16:50:00.213+01:00  INFO 18216 --- [route] [ngodb.net:27017] org.mongodb.driver.cluster               : Exception in monitor thread while connecting to server workshop-shard-00-02.rh1jm.mongodb.net:27017
+2024-11-25T13:04:53.833+01:00  INFO 6348 --- [route] [    Test worker] c.workshop.route.RouteApplicationTests   : Starting RouteApplicationTests using Java 21.0.5 with PID 6348 (started by aipg in C:\Coding\JavaProjects\WorkShop\Route\RouteQueryMicroservice)
+2024-11-25T13:04:53.836+01:00  INFO 6348 --- [route] [    Test worker] c.workshop.route.RouteApplicationTests   : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2024-11-25T13:04:54.756+01:00  INFO 6348 --- [route] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Reactive MongoDB repositories in DEFAULT mode.
+2024-11-25T13:04:55.041+01:00  INFO 6348 --- [route] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 273 ms. Found 2 Reactive MongoDB repository interfaces.
+2024-11-25T13:04:56.345+01:00  INFO 6348 --- [route] [naa.mongodb.net] org.mongodb.driver.cluster               : Adding discovered server cluster0-shard-00-00.dmnaa.mongodb.net:27017 to client view of cluster
+2024-11-25T13:04:56.378+01:00  INFO 6348 --- [route] [    Test worker] org.mongodb.driver.client                : MongoClient with metadata {&quot;driver&quot;: {&quot;name&quot;: &quot;mongo-java-driver|reactive-streams|spring-boot&quot;, &quot;version&quot;: &quot;5.0.1&quot;}, &quot;os&quot;: {&quot;type&quot;: &quot;Windows&quot;, &quot;name&quot;: &quot;Windows 11&quot;, &quot;architecture&quot;: &quot;amd64&quot;, &quot;version&quot;: &quot;10.0&quot;}, &quot;platform&quot;: &quot;Java/Oracle Corporation/21.0.5+9-LTS-239&quot;} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=majority, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=MongoCredential{mechanism=null, userName='nuriamongodb', source='admin', password=&lt;hidden&gt;, mechanismProperties=&lt;hidden&gt;}, transportSettings=NettyTransportSettings{eventLoopGroup=io.netty.channel.nio.NioEventLoopGroup@4fecdf0b, socketChannelClass=null, allocator=null, sslContext=null}, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@4c431e2a, com.mongodb.Jep395RecordCodecProvider@33317d26, com.mongodb.KotlinCodecProvider@79753f20]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[127.0.0.1:27017], srvHost=cluster0.dmnaa.mongodb.net, srvServiceName=mongodb, mode=MULTIPLE, requiredClusterType=REPLICA_SET, requiredReplicaSetName='atlas-ts5cgd-shard-0', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=true, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}
+2024-11-25T13:04:56.391+01:00  INFO 6348 --- [route] [naa.mongodb.net] org.mongodb.driver.cluster               : Adding discovered server cluster0-shard-00-02.dmnaa.mongodb.net:27017 to client view of cluster
+2024-11-25T13:04:56.396+01:00  INFO 6348 --- [route] [naa.mongodb.net] org.mongodb.driver.cluster               : Adding discovered server cluster0-shard-00-01.dmnaa.mongodb.net:27017 to client view of cluster
+2024-11-25T13:04:57.055+01:00  INFO 6348 --- [route] [    Test worker] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = earliest
+	bootstrap.servers = [127.0.0.1:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-route-query-group-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = route-query-group
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 10
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
 
-com.mongodb.MongoSocketWriteException: Exception sending message
-	at com.mongodb.internal.connection.InternalStreamConnection.translateWriteException(InternalStreamConnection.java:691) ~[mongodb-driver-core-5.0.1.jar:na]
-	at com.mongodb.internal.connection.InternalStreamConnection.sendMessage(InternalStreamConnection.java:564) ~[mongodb-driver-core-5.0.1.jar:na]
-	at com.mongodb.internal.connection.InternalStreamConnection.sendCommandMessage(InternalStreamConnection.java:396) ~[mongodb-driver-core-5.0.1.jar:na]
-	at com.mongodb.internal.connection.InternalStreamConnection.sendAndReceive(InternalStreamConnection.java:346) ~[mongodb-driver-core-5.0.1.jar:na]
-	at com.mongodb.internal.connection.CommandHelper.sendAndReceive(CommandHelper.java:92) ~[mongodb-driver-core-5.0.1.jar:na]
-	at com.mongodb.internal.connection.CommandHelper.executeCommand(CommandHelper.java:48) ~[mongodb-driver-core-5.0.1.jar:na]
-	at com.mongodb.internal.connection.InternalStreamConnectionInitializer.initializeConnectionDescription(InternalStreamConnectionInitializer.java:130) ~[mongodb-driver-core-5.0.1.jar:na]
-	at com.mongodb.internal.connection.InternalStreamConnectionInitializer.startHandshake(InternalStreamConnectionInitializer.java:78) ~[mongodb-driver-core-5.0.1.jar:na]
-	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:203) ~[mongodb-driver-core-5.0.1.jar:na]
-	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:193) ~[mongodb-driver-core-5.0.1.jar:na]
-	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:153) ~[mongodb-driver-core-5.0.1.jar:na]
-	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
-Caused by: javax.net.ssl.SSLException: Received fatal alert: internal_error
-	at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:132) ~[na:na]
-	at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:117) ~[na:na]
-	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:370) ~[na:na]
-	at java.base/sun.security.ssl.Alert$AlertConsumer.consume(Alert.java:287) ~[na:na]
-	at java.base/sun.security.ssl.TransportContext.dispatch(TransportContext.java:209) ~[na:na]
-	at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:172) ~[na:na]
-	at java.base/sun.security.ssl.SSLEngineImpl.decode(SSLEngineImpl.java:736) ~[na:na]
-	at java.base/sun.security.ssl.SSLEngineImpl.readRecord(SSLEngineImpl.java:691) ~[na:na]
-	at java.base/sun.security.ssl.SSLEngineImpl.unwrap(SSLEngineImpl.java:506) ~[na:na]
-	at java.base/sun.security.ssl.SSLEngineImpl.unwrap(SSLEngineImpl.java:482) ~[na:na]
-	at java.base/javax.net.ssl.SSLEngine.unwrap(SSLEngine.java:679) ~[na:na]
-	at io.netty.handler.ssl.SslHandler$SslEngineType$3.unwrap(SslHandler.java:309) ~[netty-handler-4.1.114.Final.jar:4.1.114.Final]
-	at io.netty.handler.ssl.SslHandler.unwrap(SslHandler.java:1473) ~[netty-handler-4.1.114.Final.jar:4.1.114.Final]
-	at io.netty.handler.ssl.SslHandler.decodeJdkCompatible(SslHandler.java:1366) ~[netty-handler-4.1.114.Final.jar:4.1.114.Final]
-	at io.netty.handler.ssl.SslHandler.decode(SslHandler.java:1415) ~[netty-handler-4.1.114.Final.jar:4.1.114.Final]
-	at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:530) ~[netty-codec-4.1.114.Final.jar:4.1.114.Final]
-	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:469) ~[netty-codec-4.1.114.Final.jar:4.1.114.Final]
-	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:290) ~[netty-codec-4.1.114.Final.jar:4.1.114.Final]
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
-	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
-	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1357) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
-	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:868) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
-	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
-	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
-	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
-	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
-	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
-	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
-	... 1 common frames omitted
-
-2024-10-31T16:50:00.213+01:00  INFO 18216 --- [route] [ngodb.net:27017] org.mongodb.driver.cluster               : Exception in monitor thread while connecting to server workshop-shard-00-00.rh1jm.mongodb.net:27017
-
-com.mongodb.MongoSocketWriteException: Exception sending message
-	at com.mongodb.internal.connection.InternalStreamConnection.translateWriteException(InternalStreamConnection.java:691) ~[mongodb-driver-core-5.0.1.jar:na]
-	at com.mongodb.internal.connection.InternalStreamConnection.sendMessage(InternalStreamConnection.java:564) ~[mongodb-driver-core-5.0.1.jar:na]
-	at com.mongodb.internal.connection.InternalStreamConnection.sendCommandMessage(InternalStreamConnection.java:396) ~[mongodb-driver-core-5.0.1.jar:na]
-	at com.mongodb.internal.connection.InternalStreamConnection.sendAndReceive(InternalStreamConnection.java:346) ~[mongodb-driver-core-5.0.1.jar:na]
-	at com.mongodb.internal.connection.CommandHelper.sendAndReceive(CommandHelper.java:92) ~[mongodb-driver-core-5.0.1.jar:na]
-	at com.mongodb.internal.connection.CommandHelper.executeCommand(CommandHelper.java:48) ~[mongodb-driver-core-5.0.1.jar:na]
-	at com.mongodb.internal.connection.InternalStreamConnectionInitializer.initializeConnectionDescription(InternalStreamConnectionInitializer.java:130) ~[mongodb-driver-core-5.0.1.jar:na]
-	at com.mongodb.internal.connection.InternalStreamConnectionInitializer.startHandshake(InternalStreamConnectionInitializer.java:78) ~[mongodb-driver-core-5.0.1.jar:na]
-	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:203) ~[mongodb-driver-core-5.0.1.jar:na]
-	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:193) ~[mongodb-driver-core-5.0.1.jar:na]
-	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:153) ~[mongodb-driver-core-5.0.1.jar:na]
-	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
-Caused by: javax.net.ssl.SSLException: Received fatal alert: internal_error
-	at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:132) ~[na:na]
-	at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:117) ~[na:na]
-	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:370) ~[na:na]
-	at java.base/sun.security.ssl.Alert$AlertConsumer.consume(Alert.java:287) ~[na:na]
-	at java.base/sun.security.ssl.TransportContext.dispatch(TransportContext.java:209) ~[na:na]
-	at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:172) ~[na:na]
-	at java.base/sun.security.ssl.SSLEngineImpl.decode(SSLEngineImpl.java:736) ~[na:na]
-	at java.base/sun.security.ssl.SSLEngineImpl.readRecord(SSLEngineImpl.java:691) ~[na:na]
-	at java.base/sun.security.ssl.SSLEngineImpl.unwrap(SSLEngineImpl.java:506) ~[na:na]
-	at java.base/sun.security.ssl.SSLEngineImpl.unwrap(SSLEngineImpl.java:482) ~[na:na]
-	at java.base/javax.net.ssl.SSLEngine.unwrap(SSLEngine.java:679) ~[na:na]
-	at io.netty.handler.ssl.SslHandler$SslEngineType$3.unwrap(SslHandler.java:309) ~[netty-handler-4.1.114.Final.jar:4.1.114.Final]
-	at io.netty.handler.ssl.SslHandler.unwrap(SslHandler.java:1473) ~[netty-handler-4.1.114.Final.jar:4.1.114.Final]
-	at io.netty.handler.ssl.SslHandler.decodeJdkCompatible(SslHandler.java:1366) ~[netty-handler-4.1.114.Final.jar:4.1.114.Final]
-	at io.netty.handler.ssl.SslHandler.decode(SslHandler.java:1415) ~[netty-handler-4.1.114.Final.jar:4.1.114.Final]
-	at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:530) ~[netty-codec-4.1.114.Final.jar:4.1.114.Final]
-	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:469) ~[netty-codec-4.1.114.Final.jar:4.1.114.Final]
-	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:290) ~[netty-codec-4.1.114.Final.jar:4.1.114.Final]
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
-	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
-	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1357) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
-	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:868) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
-	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
-	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
-	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
-	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
-	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
-	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
-	... 1 common frames omitted
-
-2024-10-31T16:50:00.213+01:00  INFO 18216 --- [route] [ngodb.net:27017] org.mongodb.driver.cluster               : Exception in monitor thread while connecting to server workshop-shard-00-01.rh1jm.mongodb.net:27017
-
-com.mongodb.MongoSocketWriteException: Exception sending message
-	at com.mongodb.internal.connection.InternalStreamConnection.translateWriteException(InternalStreamConnection.java:691) ~[mongodb-driver-core-5.0.1.jar:na]
-	at com.mongodb.internal.connection.InternalStreamConnection.sendMessage(InternalStreamConnection.java:564) ~[mongodb-driver-core-5.0.1.jar:na]
-	at com.mongodb.internal.connection.InternalStreamConnection.sendCommandMessage(InternalStreamConnection.java:396) ~[mongodb-driver-core-5.0.1.jar:na]
-	at com.mongodb.internal.connection.InternalStreamConnection.sendAndReceive(InternalStreamConnection.java:346) ~[mongodb-driver-core-5.0.1.jar:na]
-	at com.mongodb.internal.connection.CommandHelper.sendAndReceive(CommandHelper.java:92) ~[mongodb-driver-core-5.0.1.jar:na]
-	at com.mongodb.internal.connection.CommandHelper.executeCommand(CommandHelper.java:48) ~[mongodb-driver-core-5.0.1.jar:na]
-	at com.mongodb.internal.connection.InternalStreamConnectionInitializer.initializeConnectionDescription(InternalStreamConnectionInitializer.java:130) ~[mongodb-driver-core-5.0.1.jar:na]
-	at com.mongodb.internal.connection.InternalStreamConnectionInitializer.startHandshake(InternalStreamConnectionInitializer.java:78) ~[mongodb-driver-core-5.0.1.jar:na]
-	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:203) ~[mongodb-driver-core-5.0.1.jar:na]
-	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:193) ~[mongodb-driver-core-5.0.1.jar:na]
-	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:153) ~[mongodb-driver-core-5.0.1.jar:na]
-	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
-Caused by: javax.net.ssl.SSLException: Received fatal alert: internal_error
-	at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:132) ~[na:na]
-	at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:117) ~[na:na]
-	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:370) ~[na:na]
-	at java.base/sun.security.ssl.Alert$AlertConsumer.consume(Alert.java:287) ~[na:na]
-	at java.base/sun.security.ssl.TransportContext.dispatch(TransportContext.java:209) ~[na:na]
-	at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:172) ~[na:na]
-	at java.base/sun.security.ssl.SSLEngineImpl.decode(SSLEngineImpl.java:736) ~[na:na]
-	at java.base/sun.security.ssl.SSLEngineImpl.readRecord(SSLEngineImpl.java:691) ~[na:na]
-	at java.base/sun.security.ssl.SSLEngineImpl.unwrap(SSLEngineImpl.java:506) ~[na:na]
-	at java.base/sun.security.ssl.SSLEngineImpl.unwrap(SSLEngineImpl.java:482) ~[na:na]
-	at java.base/javax.net.ssl.SSLEngine.unwrap(SSLEngine.java:679) ~[na:na]
-	at io.netty.handler.ssl.SslHandler$SslEngineType$3.unwrap(SslHandler.java:309) ~[netty-handler-4.1.114.Final.jar:4.1.114.Final]
-	at io.netty.handler.ssl.SslHandler.unwrap(SslHandler.java:1473) ~[netty-handler-4.1.114.Final.jar:4.1.114.Final]
-	at io.netty.handler.ssl.SslHandler.decodeJdkCompatible(SslHandler.java:1366) ~[netty-handler-4.1.114.Final.jar:4.1.114.Final]
-	at io.netty.handler.ssl.SslHandler.decode(SslHandler.java:1415) ~[netty-handler-4.1.114.Final.jar:4.1.114.Final]
-	at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:530) ~[netty-codec-4.1.114.Final.jar:4.1.114.Final]
-	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:469) ~[netty-codec-4.1.114.Final.jar:4.1.114.Final]
-	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:290) ~[netty-codec-4.1.114.Final.jar:4.1.114.Final]
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
-	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
-	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1357) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
-	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:868) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
-	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
-	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
-	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
-	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
-	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
-	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
-	... 1 common frames omitted
-
-2024-10-31T16:50:01.090+01:00  INFO 18216 --- [route] [    Test worker] c.workshop.route.RouteApplicationTests   : Started RouteApplicationTests in 4.48 seconds (process running for 6.539)
+2024-11-25T13:04:57.142+01:00  INFO 6348 --- [route] [    Test worker] o.a.k.c.t.i.KafkaMetricsCollector        : initializing Kafka metrics collector
+2024-11-25T13:04:57.386+01:00  INFO 6348 --- [route] [    Test worker] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.7.1
+2024-11-25T13:04:57.392+01:00  INFO 6348 --- [route] [    Test worker] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: e2494e6ffb89f828
+2024-11-25T13:04:57.392+01:00  INFO 6348 --- [route] [    Test worker] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1732536297384
+2024-11-25T13:04:57.419+01:00  INFO 6348 --- [route] [e-query-group-1] o.a.k.c.c.internals.LegacyKafkaConsumer  : [Consumer clientId=consumer-route-query-group-1, groupId=route-query-group] Subscribed to topic(s): route-events
+2024-11-25T13:04:58.199+01:00  INFO 6348 --- [route] [e-query-group-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-route-query-group-1, groupId=route-query-group] Cluster ID: UKhY2FrbRlSE5dZcwrlczQ
+2024-11-25T13:04:58.200+01:00  INFO 6348 --- [route] [e-query-group-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-route-query-group-1, groupId=route-query-group] Discovered group coordinator 127.0.0.1:9092 (id: 2147483646 rack: null)
+2024-11-25T13:04:58.207+01:00  INFO 6348 --- [route] [e-query-group-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-route-query-group-1, groupId=route-query-group] (Re-)joining group
+2024-11-25T13:04:58.226+01:00  INFO 6348 --- [route] [e-query-group-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-route-query-group-1, groupId=route-query-group] Request joining group due to: need to re-join with the given member-id: consumer-route-query-group-1-da1a8cf9-ddcf-4907-aeaf-892bed50c82c
+2024-11-25T13:04:58.226+01:00  INFO 6348 --- [route] [e-query-group-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-route-query-group-1, groupId=route-query-group] (Re-)joining group
+2024-11-25T13:04:58.381+01:00  INFO 6348 --- [route] [    Test worker] c.workshop.route.RouteApplicationTests   : Started RouteApplicationTests in 5.207 seconds (process running for 8.999)
 </pre>
 </span>
 </div>
@@ -285,7 +240,7 @@ WARNING: Dynamic loading of agents will be disallowed by default in a future rel
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 8.10.2</a> at Oct 31, 2024, 4:50:05 PM</p>
+<a href="http://www.gradle.org">Gradle 8.10.2</a> at Nov 25, 2024, 1:05:15 PM</p>
 </div>
 </div>
 </body>
