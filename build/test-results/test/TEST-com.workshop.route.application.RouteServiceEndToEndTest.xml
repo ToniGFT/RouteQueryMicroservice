@@ -1,42 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.workshop.route.application.RouteServiceEndToEndTest" tests="2" skipped="0" failures="2" errors="0" timestamp="2024-11-22T11:28:59" hostname="GFT-9H3G1F3" time="3.01">
+<testsuite name="com.workshop.route.application.RouteServiceEndToEndTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2024-11-22T10:49:06" hostname="GFT-QZRYLCLPRBM" time="9.325">
   <properties/>
-  <testcase name="getRouteById_EndToEnd_ShouldReturnExpectedRoute()" classname="com.workshop.route.application.RouteServiceEndToEndTest" time="2.775">
-    <failure message="org.opentest4j.AssertionFailedError: expected: &lt;67406afd336813209669a7af&gt; but was: &lt;67406afd336813209669a7b1&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;67406afd336813209669a7af&gt; but was: &lt;67406afd336813209669a7b1&gt;
-	at app//org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
-	at app//org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
-	at app//org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
-	at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
-	at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
-	at app//org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1145)
-	at app//com.workshop.route.application.RouteServiceEndToEndTest.lambda$getRouteById_EndToEnd_ShouldReturnExpectedRoute$0(RouteServiceEndToEndTest.java:54)
-	at app//org.springframework.test.web.reactive.server.DefaultWebTestClient$DefaultBodySpec.lambda$consumeWith$4(DefaultWebTestClient.java:571)
-	at app//org.springframework.test.web.reactive.server.ExchangeResult.assertWithDiagnostics(ExchangeResult.java:232)
-	at app//org.springframework.test.web.reactive.server.DefaultWebTestClient$DefaultBodySpec.consumeWith(DefaultWebTestClient.java:571)
-	at app//com.workshop.route.application.RouteServiceEndToEndTest.getRouteById_EndToEnd_ShouldReturnExpectedRoute(RouteServiceEndToEndTest.java:51)
-	at java.base@21.0.5/java.lang.reflect.Method.invoke(Method.java:580)
-	at java.base@21.0.5/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at java.base@21.0.5/java.util.ArrayList.forEach(ArrayList.java:1596)
-</failure>
-  </testcase>
-  <testcase name="getAllRoutes_EndToEnd_ShouldReturnAllRoutes()" classname="com.workshop.route.application.RouteServiceEndToEndTest" time="0.233">
-    <failure message="org.opentest4j.AssertionFailedError: expected: &lt;Route A&gt; but was: &lt;Route B&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;Route A&gt; but was: &lt;Route B&gt;
-	at app//org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
-	at app//org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
-	at app//org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
-	at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
-	at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
-	at app//org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1145)
-	at app//com.workshop.route.application.RouteServiceEndToEndTest.lambda$getAllRoutes_EndToEnd_ShouldReturnAllRoutes$1(RouteServiceEndToEndTest.java:81)
-	at app//org.springframework.test.web.reactive.server.DefaultWebTestClient$DefaultBodySpec.lambda$consumeWith$4(DefaultWebTestClient.java:571)
-	at app//org.springframework.test.web.reactive.server.ExchangeResult.assertWithDiagnostics(ExchangeResult.java:232)
-	at app//org.springframework.test.web.reactive.server.DefaultWebTestClient$DefaultBodySpec.consumeWith(DefaultWebTestClient.java:571)
-	at app//com.workshop.route.application.RouteServiceEndToEndTest.getAllRoutes_EndToEnd_ShouldReturnAllRoutes(RouteServiceEndToEndTest.java:67)
-	at java.base@21.0.5/java.lang.reflect.Method.invoke(Method.java:580)
-	at java.base@21.0.5/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at java.base@21.0.5/java.util.ArrayList.forEach(ArrayList.java:1596)
-</failure>
-  </testcase>
+  <testcase name="getRouteById_EndToEnd_ShouldReturnExpectedRoute()" classname="com.workshop.route.application.RouteServiceEndToEndTest" time="8.73"/>
+  <testcase name="getAllRoutes_EndToEnd_ShouldReturnAllRoutes()" classname="com.workshop.route.application.RouteServiceEndToEndTest" time="0.588"/>
   <system-out><![CDATA[
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -47,179 +13,35 @@
 
  :: Spring Boot ::                (v3.3.5)
 
-2024-11-22T12:28:54.245+01:00  INFO 7708 --- [route] [    Test worker] c.w.r.a.RouteServiceEndToEndTest         : Starting RouteServiceEndToEndTest using Java 21.0.5 with PID 7708 (started by aipg in C:\Coding\JavaProjects\WorkShop\Route\RouteQueryMicroservice)
-2024-11-22T12:28:54.250+01:00  INFO 7708 --- [route] [    Test worker] c.w.r.a.RouteServiceEndToEndTest         : No active profile set, falling back to 1 default profile: "default"
-2024-11-22T12:28:55.400+01:00  INFO 7708 --- [route] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Reactive MongoDB repositories in DEFAULT mode.
-2024-11-22T12:28:55.634+01:00  INFO 7708 --- [route] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 225 ms. Found 2 Reactive MongoDB repository interfaces.
-2024-11-22T12:28:56.751+01:00  INFO 7708 --- [route] [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
-2024-11-22T12:28:56.776+01:00  INFO 7708 --- [route] [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-11-22T12:28:56.776+01:00  INFO 7708 --- [route] [    Test worker] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
-2024-11-22T12:28:56.866+01:00  INFO 7708 --- [route] [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-11-22T12:28:56.867+01:00  INFO 7708 --- [route] [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2596 ms
-2024-11-22T12:28:57.443+01:00  INFO 7708 --- [route] [1jm.mongodb.net] org.mongodb.driver.cluster               : Adding discovered server workshop-shard-00-02.rh1jm.mongodb.net:27017 to client view of cluster
-2024-11-22T12:28:57.455+01:00  INFO 7708 --- [route] [    Test worker] org.mongodb.driver.client                : MongoClient with metadata {"driver": {"name": "mongo-java-driver|reactive-streams|spring-boot", "version": "5.0.1"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/21.0.5+9-LTS-jvmci-23.1-b48"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=majority, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=MongoCredential{mechanism=null, userName='nabz', source='admin', password=<hidden>, mechanismProperties=<hidden>}, transportSettings=NettyTransportSettings{eventLoopGroup=io.netty.channel.nio.NioEventLoopGroup@11314183, socketChannelClass=null, allocator=null, sslContext=null}, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@d9c54e6, com.mongodb.Jep395RecordCodecProvider@570e6180, com.mongodb.KotlinCodecProvider@1c8cacce]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[127.0.0.1:27017], srvHost=workshop.rh1jm.mongodb.net, srvServiceName=mongodb, mode=MULTIPLE, requiredClusterType=REPLICA_SET, requiredReplicaSetName='atlas-uwoswq-shard-0', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=true, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}
-2024-11-22T12:28:57.502+01:00  INFO 7708 --- [route] [1jm.mongodb.net] org.mongodb.driver.cluster               : Adding discovered server workshop-shard-00-00.rh1jm.mongodb.net:27017 to client view of cluster
-2024-11-22T12:28:57.507+01:00  INFO 7708 --- [route] [1jm.mongodb.net] org.mongodb.driver.cluster               : Adding discovered server workshop-shard-00-01.rh1jm.mongodb.net:27017 to client view of cluster
-2024-11-22T12:28:58.425+01:00  INFO 7708 --- [route] [    Test worker] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
-	allow.auto.create.topics = true
-	auto.commit.interval.ms = 5000
-	auto.include.jmx.reporter = true
-	auto.offset.reset = earliest
-	bootstrap.servers = [127.0.0.1:9092]
-	check.crcs = true
-	client.dns.lookup = use_all_dns_ips
-	client.id = consumer-route-query-group-1
-	client.rack = 
-	connections.max.idle.ms = 540000
-	default.api.timeout.ms = 60000
-	enable.auto.commit = false
-	enable.metrics.push = true
-	exclude.internal.topics = true
-	fetch.max.bytes = 52428800
-	fetch.max.wait.ms = 500
-	fetch.min.bytes = 1
-	group.id = route-query-group
-	group.instance.id = null
-	group.protocol = classic
-	group.remote.assignor = null
-	heartbeat.interval.ms = 3000
-	interceptor.classes = []
-	internal.leave.group.on.close = true
-	internal.throw.on.fetch.stable.offset.unsupported = false
-	isolation.level = read_uncommitted
-	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
-	max.partition.fetch.bytes = 1048576
-	max.poll.interval.ms = 300000
-	max.poll.records = 10
-	metadata.max.age.ms = 300000
-	metric.reporters = []
-	metrics.num.samples = 2
-	metrics.recording.level = INFO
-	metrics.sample.window.ms = 30000
-	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
-	receive.buffer.bytes = 65536
-	reconnect.backoff.max.ms = 1000
-	reconnect.backoff.ms = 50
-	request.timeout.ms = 30000
-	retry.backoff.max.ms = 1000
-	retry.backoff.ms = 100
-	sasl.client.callback.handler.class = null
-	sasl.jaas.config = null
-	sasl.kerberos.kinit.cmd = /usr/bin/kinit
-	sasl.kerberos.min.time.before.relogin = 60000
-	sasl.kerberos.service.name = null
-	sasl.kerberos.ticket.renew.jitter = 0.05
-	sasl.kerberos.ticket.renew.window.factor = 0.8
-	sasl.login.callback.handler.class = null
-	sasl.login.class = null
-	sasl.login.connect.timeout.ms = null
-	sasl.login.read.timeout.ms = null
-	sasl.login.refresh.buffer.seconds = 300
-	sasl.login.refresh.min.period.seconds = 60
-	sasl.login.refresh.window.factor = 0.8
-	sasl.login.refresh.window.jitter = 0.05
-	sasl.login.retry.backoff.max.ms = 10000
-	sasl.login.retry.backoff.ms = 100
-	sasl.mechanism = GSSAPI
-	sasl.oauthbearer.clock.skew.seconds = 30
-	sasl.oauthbearer.expected.audience = null
-	sasl.oauthbearer.expected.issuer = null
-	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
-	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
-	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
-	sasl.oauthbearer.jwks.endpoint.url = null
-	sasl.oauthbearer.scope.claim.name = scope
-	sasl.oauthbearer.sub.claim.name = sub
-	sasl.oauthbearer.token.endpoint.url = null
-	security.protocol = PLAINTEXT
-	security.providers = null
-	send.buffer.bytes = 131072
-	session.timeout.ms = 45000
-	socket.connection.setup.timeout.max.ms = 30000
-	socket.connection.setup.timeout.ms = 10000
-	ssl.cipher.suites = null
-	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
-	ssl.endpoint.identification.algorithm = https
-	ssl.engine.factory.class = null
-	ssl.key.password = null
-	ssl.keymanager.algorithm = SunX509
-	ssl.keystore.certificate.chain = null
-	ssl.keystore.key = null
-	ssl.keystore.location = null
-	ssl.keystore.password = null
-	ssl.keystore.type = JKS
-	ssl.protocol = TLSv1.3
-	ssl.provider = null
-	ssl.secure.random.implementation = null
-	ssl.trustmanager.algorithm = PKIX
-	ssl.truststore.certificates = null
-	ssl.truststore.location = null
-	ssl.truststore.password = null
-	ssl.truststore.type = JKS
-	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
-
-2024-11-22T12:28:58.582+01:00  INFO 7708 --- [route] [ngodb.net:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=workshop-shard-00-01.rh1jm.mongodb.net:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=620975000, setName='atlas-uwoswq-shard-0', canonicalAddress=workshop-shard-00-01.rh1jm.mongodb.net:27017, hosts=[workshop-shard-00-01.rh1jm.mongodb.net:27017, workshop-shard-00-00.rh1jm.mongodb.net:27017, workshop-shard-00-02.rh1jm.mongodb.net:27017], passives=[], arbiters=[], primary='workshop-shard-00-01.rh1jm.mongodb.net:27017', tagSet=TagSet{[Tag{name='availabilityZone', value='euw3-az2'}, Tag{name='diskState', value='READY'}, Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='EU_WEST_3'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=7fffffff000000000000001e, setVersion=5, topologyVersion=TopologyVersion{processId=673b5f832a66dae31f4165e4, counter=7}, lastWriteDate=Fri Nov 22 12:29:00 CET 2024, lastUpdateTimeNanos=7593692323000}
-2024-11-22T12:28:58.582+01:00  INFO 7708 --- [route] [ngodb.net:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=workshop-shard-00-00.rh1jm.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=621040500, setName='atlas-uwoswq-shard-0', canonicalAddress=workshop-shard-00-00.rh1jm.mongodb.net:27017, hosts=[workshop-shard-00-01.rh1jm.mongodb.net:27017, workshop-shard-00-00.rh1jm.mongodb.net:27017, workshop-shard-00-02.rh1jm.mongodb.net:27017], passives=[], arbiters=[], primary='workshop-shard-00-01.rh1jm.mongodb.net:27017', tagSet=TagSet{[Tag{name='availabilityZone', value='euw3-az1'}, Tag{name='diskState', value='READY'}, Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='EU_WEST_3'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=5, topologyVersion=TopologyVersion{processId=673b5f535beb294e0b04ef6c, counter=5}, lastWriteDate=Fri Nov 22 12:29:00 CET 2024, lastUpdateTimeNanos=7593692323200}
-2024-11-22T12:28:58.582+01:00  INFO 7708 --- [route] [ngodb.net:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=workshop-shard-00-02.rh1jm.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=622443900, setName='atlas-uwoswq-shard-0', canonicalAddress=workshop-shard-00-02.rh1jm.mongodb.net:27017, hosts=[workshop-shard-00-01.rh1jm.mongodb.net:27017, workshop-shard-00-00.rh1jm.mongodb.net:27017, workshop-shard-00-02.rh1jm.mongodb.net:27017], passives=[], arbiters=[], primary='workshop-shard-00-01.rh1jm.mongodb.net:27017', tagSet=TagSet{[Tag{name='availabilityZone', value='euw3-az3'}, Tag{name='diskState', value='READY'}, Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='EU_WEST_3'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=5, topologyVersion=TopologyVersion{processId=673b5fb4c2a0e44cfd7c0e32, counter=4}, lastWriteDate=Fri Nov 22 12:29:00 CET 2024, lastUpdateTimeNanos=7593692581300}
-2024-11-22T12:28:58.589+01:00  INFO 7708 --- [route] [ngodb.net:27017] org.mongodb.driver.cluster               : Discovered replica set primary workshop-shard-00-01.rh1jm.mongodb.net:27017 with max election id 7fffffff000000000000001e and max set version 5
-2024-11-22T12:28:58.609+01:00  INFO 7708 --- [route] [    Test worker] o.a.k.c.t.i.KafkaMetricsCollector        : initializing Kafka metrics collector
-2024-11-22T12:28:58.853+01:00  INFO 7708 --- [route] [    Test worker] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.7.1
-2024-11-22T12:28:58.855+01:00  INFO 7708 --- [route] [    Test worker] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: e2494e6ffb89f828
-2024-11-22T12:28:58.855+01:00  INFO 7708 --- [route] [    Test worker] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1732274938850
-2024-11-22T12:28:58.886+01:00  INFO 7708 --- [route] [e-query-group-1] o.a.k.c.c.internals.LegacyKafkaConsumer  : [Consumer clientId=consumer-route-query-group-1, groupId=route-query-group] Subscribed to topic(s): route-events
-2024-11-22T12:28:59.696+01:00  INFO 7708 --- [route] [e-query-group-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-route-query-group-1, groupId=route-query-group] Cluster ID: LV2lHVgKTa6EySJFP5O-tA
-2024-11-22T12:28:59.697+01:00  INFO 7708 --- [route] [e-query-group-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-route-query-group-1, groupId=route-query-group] Discovered group coordinator 127.0.0.1:9092 (id: 2147483646 rack: null)
-2024-11-22T12:28:59.702+01:00  INFO 7708 --- [route] [e-query-group-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-route-query-group-1, groupId=route-query-group] (Re-)joining group
-2024-11-22T12:28:59.725+01:00  INFO 7708 --- [route] [e-query-group-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-route-query-group-1, groupId=route-query-group] Request joining group due to: need to re-join with the given member-id: consumer-route-query-group-1-732d7112-a6e1-48cb-9b8a-c0d60e2f036c
-2024-11-22T12:28:59.726+01:00  INFO 7708 --- [route] [e-query-group-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-route-query-group-1, groupId=route-query-group] (Re-)joining group
-2024-11-22T12:28:59.755+01:00  INFO 7708 --- [route] [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 53035 (http) with context path '/'
-2024-11-22T12:28:59.765+01:00  INFO 7708 --- [route] [    Test worker] c.w.r.a.RouteServiceEndToEndTest         : Started RouteServiceEndToEndTest in 6.099 seconds (process running for 7.982)
-2024-11-22T12:29:02.213+01:00  INFO 7708 --- [route] [o-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-11-22T12:29:02.214+01:00  INFO 7708 --- [route] [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-11-22T12:29:02.215+01:00  INFO 7708 --- [route] [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2024-11-22T12:29:02.277+01:00  INFO 7708 --- [route] [o-auto-1-exec-1] c.w.r.a.controller.RouteController       : Fetching route with ID: 67406afd336813209669a7af
-2024-11-22T12:29:02.384+01:00  INFO 7708 --- [route] [ntLoopGroup-2-8] c.w.r.a.controller.RouteController       : Successfully fetched route with ID: 67406afd336813209669a7af
-2024-11-22T12:29:02.725+01:00 ERROR 7708 --- [route] [    Test worker] o.s.t.w.reactive.server.ExchangeResult   : Request details for assertion failure:
-
-> GET http://localhost:53035/routes/67406afd336813209669a7af
-> accept-encoding: [gzip]
-> user-agent: [ReactorNetty/1.1.23]
-> host: [localhost:53035]
-> WebTestClient-Request-Id: [1]
-> Accept: [application/json]
-
-No content
-
-< 200 OK OK
-< Content-Type: [application/json]
-< Transfer-Encoding: [chunked]
-< Date: [Fri, 22 Nov 2024 11:29:02 GMT]
-
-{"routeId":{"timestamp":1732274941,"date":"2024-11-22T11:29:01.000+00:00"},"routeName":"Route A","stops":null,"schedule":null}
-
-2024-11-22T12:29:02.860+01:00  INFO 7708 --- [route] [o-auto-1-exec-4] c.w.r.a.controller.RouteController       : Fetching all routes
-2024-11-22T12:29:02.865+01:00  INFO 7708 --- [route] [o-auto-1-exec-4] c.w.r.a.controller.RouteController       : Starting to fetch all routes
-2024-11-22T12:29:02.926+01:00  INFO 7708 --- [route] [ntLoopGroup-2-8] c.w.r.a.controller.RouteController       : Successfully fetched all routes
-2024-11-22T12:29:02.983+01:00 ERROR 7708 --- [route] [    Test worker] o.s.t.w.reactive.server.ExchangeResult   : Request details for assertion failure:
-
-> GET http://localhost:53035/routes
-> accept-encoding: [gzip]
-> user-agent: [ReactorNetty/1.1.23]
-> host: [localhost:53035]
-> WebTestClient-Request-Id: [2]
-> Accept: [application/json]
-
-No content
-
-< 200 OK OK
-< Content-Type: [application/json]
-< Transfer-Encoding: [chunked]
-< Date: [Fri, 22 Nov 2024 11:29:02 GMT]
-
-[{"headers":{},"body":{"routeId":{"timestamp":1732274942,"date":"2024-11-22T11:29:02.000+00:00"},"routeName":"Route B","stops":null,"schedule":null},"statusCode":"OK","statusCodeValue":200},{"headers":{},"body":{"routeId":{"timestamp":1732274942,"date":"2024-11-22T11:29:02.000+00:00"},"routeName":"Route A","stops":null,"schedule":null},"statusCode":"OK","statusCodeValue":200}]
-
+2024-11-22T11:48:50.914+01:00  INFO 10396 --- [route] [    Test worker] c.w.r.a.RouteServiceEndToEndTest         : Starting RouteServiceEndToEndTest using Java 21.0.4 with PID 10396 (started by nabz in C:\Users\nabz\Cursos\RouteQueryMicroservice)
+2024-11-22T11:48:50.948+01:00  INFO 10396 --- [route] [    Test worker] c.w.r.a.RouteServiceEndToEndTest         : No active profile set, falling back to 1 default profile: "default"
+2024-11-22T11:48:54.569+01:00  INFO 10396 --- [route] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Reactive MongoDB repositories in DEFAULT mode.
+2024-11-22T11:48:55.319+01:00  INFO 10396 --- [route] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 720 ms. Found 1 Reactive MongoDB repository interface.
+2024-11-22T11:48:58.496+01:00  INFO 10396 --- [route] [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
+2024-11-22T11:48:58.556+01:00  INFO 10396 --- [route] [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-22T11:48:58.559+01:00  INFO 10396 --- [route] [    Test worker] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-22T11:48:58.853+01:00  INFO 10396 --- [route] [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-22T11:48:58.856+01:00  INFO 10396 --- [route] [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 7816 ms
+2024-11-22T11:49:00.063+01:00  INFO 10396 --- [route] [1jm.mongodb.net] org.mongodb.driver.cluster               : Adding discovered server workshop-shard-00-02.rh1jm.mongodb.net:27017 to client view of cluster
+2024-11-22T11:49:00.151+01:00  INFO 10396 --- [route] [    Test worker] org.mongodb.driver.client                : MongoClient with metadata {"driver": {"name": "mongo-java-driver|reactive-streams|spring-boot", "version": "5.0.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Amazon.com Inc./21.0.4+7-LTS"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=majority, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=MongoCredential{mechanism=null, userName='nabz', source='admin', password=<hidden>, mechanismProperties=<hidden>}, transportSettings=NettyTransportSettings{eventLoopGroup=io.netty.channel.nio.NioEventLoopGroup@4d55b63d, socketChannelClass=null, allocator=null, sslContext=null}, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@5c5432d9, com.mongodb.Jep395RecordCodecProvider@6790aad2, com.mongodb.KotlinCodecProvider@1e418480]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[127.0.0.1:27017], srvHost=workshop.rh1jm.mongodb.net, srvServiceName=mongodb, mode=MULTIPLE, requiredClusterType=REPLICA_SET, requiredReplicaSetName='atlas-uwoswq-shard-0', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=true, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}
+2024-11-22T11:49:00.183+01:00  INFO 10396 --- [route] [1jm.mongodb.net] org.mongodb.driver.cluster               : Adding discovered server workshop-shard-00-00.rh1jm.mongodb.net:27017 to client view of cluster
+2024-11-22T11:49:00.200+01:00  INFO 10396 --- [route] [1jm.mongodb.net] org.mongodb.driver.cluster               : Adding discovered server workshop-shard-00-01.rh1jm.mongodb.net:27017 to client view of cluster
+2024-11-22T11:49:02.628+01:00  INFO 10396 --- [route] [ngodb.net:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=workshop-shard-00-00.rh1jm.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1291542100, setName='atlas-uwoswq-shard-0', canonicalAddress=workshop-shard-00-00.rh1jm.mongodb.net:27017, hosts=[workshop-shard-00-01.rh1jm.mongodb.net:27017, workshop-shard-00-00.rh1jm.mongodb.net:27017, workshop-shard-00-02.rh1jm.mongodb.net:27017], passives=[], arbiters=[], primary='workshop-shard-00-01.rh1jm.mongodb.net:27017', tagSet=TagSet{[Tag{name='availabilityZone', value='euw3-az1'}, Tag{name='diskState', value='READY'}, Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='EU_WEST_3'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=5, topologyVersion=TopologyVersion{processId=673b5f535beb294e0b04ef6c, counter=5}, lastWriteDate=Fri Nov 22 11:49:02 CET 2024, lastUpdateTimeNanos=13742762445500}
+2024-11-22T11:49:02.629+01:00  INFO 10396 --- [route] [ngodb.net:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=workshop-shard-00-01.rh1jm.mongodb.net:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1291227900, setName='atlas-uwoswq-shard-0', canonicalAddress=workshop-shard-00-01.rh1jm.mongodb.net:27017, hosts=[workshop-shard-00-01.rh1jm.mongodb.net:27017, workshop-shard-00-00.rh1jm.mongodb.net:27017, workshop-shard-00-02.rh1jm.mongodb.net:27017], passives=[], arbiters=[], primary='workshop-shard-00-01.rh1jm.mongodb.net:27017', tagSet=TagSet{[Tag{name='availabilityZone', value='euw3-az2'}, Tag{name='diskState', value='READY'}, Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='EU_WEST_3'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=7fffffff000000000000001e, setVersion=5, topologyVersion=TopologyVersion{processId=673b5f832a66dae31f4165e4, counter=7}, lastWriteDate=Fri Nov 22 11:49:02 CET 2024, lastUpdateTimeNanos=13742760635800}
+2024-11-22T11:49:02.628+01:00  INFO 10396 --- [route] [ngodb.net:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=workshop-shard-00-02.rh1jm.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1291729100, setName='atlas-uwoswq-shard-0', canonicalAddress=workshop-shard-00-02.rh1jm.mongodb.net:27017, hosts=[workshop-shard-00-01.rh1jm.mongodb.net:27017, workshop-shard-00-00.rh1jm.mongodb.net:27017, workshop-shard-00-02.rh1jm.mongodb.net:27017], passives=[], arbiters=[], primary='workshop-shard-00-01.rh1jm.mongodb.net:27017', tagSet=TagSet{[Tag{name='availabilityZone', value='euw3-az3'}, Tag{name='diskState', value='READY'}, Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='EU_WEST_3'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=5, topologyVersion=TopologyVersion{processId=673b5fb4c2a0e44cfd7c0e32, counter=4}, lastWriteDate=Fri Nov 22 11:49:02 CET 2024, lastUpdateTimeNanos=13742761181500}
+2024-11-22T11:49:02.666+01:00  INFO 10396 --- [route] [ngodb.net:27017] org.mongodb.driver.cluster               : Discovered replica set primary workshop-shard-00-01.rh1jm.mongodb.net:27017 with max election id 7fffffff000000000000001e and max set version 5
+2024-11-22T11:49:05.723+01:00  INFO 10396 --- [route] [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 58094 (http) with context path '/'
+2024-11-22T11:49:05.781+01:00  INFO 10396 --- [route] [    Test worker] c.w.r.a.RouteServiceEndToEndTest         : Started RouteServiceEndToEndTest in 17.392 seconds (process running for 23.952)
+2024-11-22T11:49:14.345+01:00  INFO 10396 --- [route] [o-auto-1-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-22T11:49:14.346+01:00  INFO 10396 --- [route] [o-auto-1-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-11-22T11:49:14.351+01:00  INFO 10396 --- [route] [o-auto-1-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2024-11-22T11:49:14.499+01:00  INFO 10396 --- [route] [o-auto-1-exec-2] c.w.r.a.controller.RouteController       : Fetching route with ID: 674061a81a5ee753278ea41f
+2024-11-22T11:49:14.633+01:00  INFO 10396 --- [route] [ntLoopGroup-2-8] c.w.r.a.controller.RouteController       : Successfully fetched route with ID: 674061a81a5ee753278ea41f
+2024-11-22T11:49:15.748+01:00  INFO 10396 --- [route] [o-auto-1-exec-4] c.w.r.a.controller.RouteController       : Fetching all routes
+2024-11-22T11:49:15.751+01:00  INFO 10396 --- [route] [o-auto-1-exec-4] c.w.r.a.controller.RouteController       : Starting to fetch all routes
+2024-11-22T11:49:15.806+01:00  INFO 10396 --- [route] [ntLoopGroup-2-8] c.w.r.a.controller.RouteController       : Successfully fetched all routes
 ]]></system-out>
-  <system-err><![CDATA[WARNING: A Java agent has been loaded dynamically (C:\Users\aipg\.gradle\caches\modules-2\files-2.1\net.bytebuddy\byte-buddy-agent\1.14.19\154da3a65b4f4a909d3e5bdec55d1b2b4cbb6ce1\byte-buddy-agent-1.14.19.jar)
+  <system-err><![CDATA[WARNING: A Java agent has been loaded dynamically (C:\Users\nabz\.gradle\caches\modules-2\files-2.1\net.bytebuddy\byte-buddy-agent\1.14.19\154da3a65b4f4a909d3e5bdec55d1b2b4cbb6ce1\byte-buddy-agent-1.14.19.jar)
 WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
 WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
 WARNING: Dynamic loading of agents will be disallowed by default in a future release
