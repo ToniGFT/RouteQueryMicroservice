@@ -3,7 +3,7 @@ spring:
     name: route
   data:
     mongodb:
-      uri: mongodb+srv://nabz:nabz@workshop.rh1jm.mongodb.net/Workshop?retryWrites=true&w=majority
+      uri: mongodb+srv://nuriamongodb:NoD7XFXMhzBWEZsb@cluster0.dmnaa.mongodb.net/
   kafka:
     bootstrap-servers: 127.0.0.1:9092
     producer:
