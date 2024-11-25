@@ -1,0 +1,42 @@
+version: '3.8'
+
+services:
+  route_zookeeper:
+    image: docker.io/confluentinc/cp-zookeeper:latest
+    container_name: route_zookeeper
+    environment:
+      ZOOKEEPER_CLIENT_PORT: 2181
+      ZOOKEEPER_TICK_TIME: 2000
+    networks:
+      kafka_network:
+        aliases:
+          - route_zookeeper
+    ports:
+      - "2181:2181"
+    restart: always
+
+  route_kafka:
+    image: docker.io/confluentinc/cp-kafka:latest
+    container_name: route_kafka
+    depends_on:
+      - route_zookeeper
+    environment:
+      KAFKA_BROKER_ID: 1
+      KAFKA_ZOOKEEPER_CONNECT: route_zookeeper:2181
+      KAFKA_LISTENERS: PLAINTEXT://0.0.0.0:9092
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://127.0.0.1:9092
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+      KAFKA_LOG_DIRS: /var/lib/kafka/data
+
+    networks:
+      kafka_network:
+        aliases:
+          - route_kafka
+    ports:
+      - "9092:9092"
+    restart: always
+
+
+networks:
+  kafka_network:
+    driver: bridge

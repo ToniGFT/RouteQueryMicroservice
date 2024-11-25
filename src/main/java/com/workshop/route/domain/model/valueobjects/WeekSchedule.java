@@ -1,17 +1,19 @@
 package com.workshop.route.domain.model.valueobjects;
 
+import jakarta.validation.constraints.AssertTrue;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Positive;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.time.LocalTime;
-import jakarta.validation.constraints.NotNull;
-import jakarta.validation.constraints.Positive;
-import jakarta.validation.constraints.AssertTrue;
 
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
+@Builder
 public class WeekSchedule {
 
     @NotNull(message = "La hora de inicio no puede ser nula")
