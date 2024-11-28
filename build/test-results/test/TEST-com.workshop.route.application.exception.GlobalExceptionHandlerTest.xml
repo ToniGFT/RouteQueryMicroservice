@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.workshop.route.application.exception.GlobalExceptionHandlerTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2024-11-28T12:15:35" hostname="GFT-9H3G1F3" time="0.018">
+  <properties/>
+  <testcase name="testHandleJsonMappingException()" classname="com.workshop.route.application.exception.GlobalExceptionHandlerTest" time="0.012"/>
+  <testcase name="testHandleGenericException()" classname="com.workshop.route.application.exception.GlobalExceptionHandlerTest" time="0.002"/>
+  <testcase name="testHandleRuntimeException()" classname="com.workshop.route.application.exception.GlobalExceptionHandlerTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

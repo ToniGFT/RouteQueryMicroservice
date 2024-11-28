@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="KafkaConsumerConfig Integration Tests" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-11-28T12:15:36" hostname="GFT-9H3G1F3" time="0.032">
+  <properties/>
+  <testcase name="Test ReceiverOptions Bean Creation" classname="com.workshop.route.infrastructure.configuration.kafka.KafkaConsumerConfigTest" time="0.032"/>
+  <system-out><![CDATA[2024-11-28T13:15:36.810+01:00  INFO 15044 --- [route] [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.workshop.route.infrastructure.configuration.kafka.KafkaConsumerConfigTest]: KafkaConsumerConfigTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-11-28T13:15:36.837+01:00  INFO 15044 --- [route] [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.workshop.route.RouteApplication for test class com.workshop.route.infrastructure.configuration.kafka.KafkaConsumerConfigTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

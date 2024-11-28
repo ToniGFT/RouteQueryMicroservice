@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.workshop.route.infrastructure.messaging.kafka.RouteEventConsumerTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2024-11-28T12:15:36" hostname="GFT-9H3G1F3" time="1.04">
+  <properties/>
+  <testcase name="testConsumeEvents_SuccessfulProcessing()" classname="com.workshop.route.infrastructure.messaging.kafka.RouteEventConsumerTest" time="0.904"/>
+  <testcase name="testConsumeEvents_MessageWithoutType()" classname="com.workshop.route.infrastructure.messaging.kafka.RouteEventConsumerTest" time="0.109"/>
+  <testcase name="testConsumeEvents_EventProcessorThrowsException()" classname="com.workshop.route.infrastructure.messaging.kafka.RouteEventConsumerTest" time="0.026"/>
+  <system-out><![CDATA[2024-11-28T13:15:37.370+01:00  INFO 15044 --- [route] [e-query-group-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-route-query-group-1, groupId=route-query-group] Node -1 disconnected.
+2024-11-28T13:15:37.371+01:00  WARN 15044 --- [route] [e-query-group-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-route-query-group-1, groupId=route-query-group] Connection to node -1 (/127.0.0.1:9092) could not be established. Node may not be available.
+2024-11-28T13:15:37.371+01:00  WARN 15044 --- [route] [e-query-group-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-route-query-group-1, groupId=route-query-group] Bootstrap broker 127.0.0.1:9092 (id: -1 rack: null) disconnected
+2024-11-28T13:15:37.409+01:00  INFO 15044 --- [route] [e-query-group-2] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-route-query-group-2, groupId=route-query-group] Node -1 disconnected.
+2024-11-28T13:15:37.409+01:00  WARN 15044 --- [route] [e-query-group-2] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-route-query-group-2, groupId=route-query-group] Connection to node -1 (/127.0.0.1:9092) could not be established. Node may not be available.
+2024-11-28T13:15:37.409+01:00  WARN 15044 --- [route] [e-query-group-2] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-route-query-group-2, groupId=route-query-group] Bootstrap broker 127.0.0.1:9092 (id: -1 rack: null) disconnected
+2024-11-28T13:15:37.787+01:00 ERROR 15044 --- [route] [    Test worker] c.w.r.i.m.kafka.RouteEventConsumer       : Failed to process record: Message does not contain 'type' field
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

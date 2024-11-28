@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.workshop.route.application.controller.RouteControllerIntegrationTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2024-11-25T12:05:08" hostname="GFT-9H3G1F3" time="0.453">
+<testsuite name="com.workshop.route.application.controller.RouteControllerIntegrationTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2024-11-28T12:15:34" hostname="GFT-9H3G1F3" time="0.433">
   <properties/>
-  <testcase name="getRouteById_ShouldReturnRoute_WhenRouteExists()" classname="com.workshop.route.application.controller.RouteControllerIntegrationTest" time="0.176"/>
-  <testcase name="getAllRoutes_ShouldReturnAllRoutes()" classname="com.workshop.route.application.controller.RouteControllerIntegrationTest" time="0.141"/>
-  <testcase name="getRouteById_ShouldReturnNotFound_WhenRouteDoesNotExist()" classname="com.workshop.route.application.controller.RouteControllerIntegrationTest" time="0.133"/>
-  <system-out><![CDATA[2024-11-25T13:05:08.281+01:00  INFO 6348 --- [route] [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.workshop.route.application.controller.RouteControllerIntegrationTest]: RouteControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2024-11-25T13:05:08.300+01:00  INFO 6348 --- [route] [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.workshop.route.RouteApplication for test class com.workshop.route.application.controller.RouteControllerIntegrationTest
-2024-11-25T13:05:08.436+01:00  INFO 6348 --- [route] [o-auto-1-exec-5] c.w.r.a.controller.RouteController       : Fetching route with ID: 674467f4294bb869f65f5caa
-2024-11-25T13:05:08.476+01:00  INFO 6348 --- [route] [ntLoopGroup-3-7] c.w.r.a.controller.RouteController       : Successfully fetched route with ID: 674467f4294bb869f65f5caa
-2024-11-25T13:05:08.576+01:00  INFO 6348 --- [route] [o-auto-1-exec-7] c.w.r.a.controller.RouteController       : Fetching all routes
-2024-11-25T13:05:08.577+01:00  INFO 6348 --- [route] [o-auto-1-exec-7] c.w.r.a.controller.RouteController       : Starting to fetch all routes
-2024-11-25T13:05:08.617+01:00  INFO 6348 --- [route] [ntLoopGroup-3-7] c.w.r.a.controller.RouteController       : Successfully fetched all routes
-2024-11-25T13:05:08.716+01:00  INFO 6348 --- [route] [o-auto-1-exec-9] c.w.r.a.controller.RouteController       : Fetching route with ID: 674467f4294bb869f65f5cb0
-2024-11-25T13:05:08.754+01:00  INFO 6348 --- [route] [ntLoopGroup-3-7] c.w.r.a.controller.RouteController       : Successfully fetched route with ID: 674467f4294bb869f65f5cb0
+  <testcase name="getRouteById_ShouldReturnRoute_WhenRouteExists()" classname="com.workshop.route.application.controller.RouteControllerIntegrationTest" time="0.168"/>
+  <testcase name="getAllRoutes_ShouldReturnAllRoutes()" classname="com.workshop.route.application.controller.RouteControllerIntegrationTest" time="0.132"/>
+  <testcase name="getRouteById_ShouldReturnNotFound_WhenRouteDoesNotExist()" classname="com.workshop.route.application.controller.RouteControllerIntegrationTest" time="0.13"/>
+  <system-out><![CDATA[2024-11-28T13:15:34.459+01:00  INFO 15044 --- [route] [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.workshop.route.application.controller.RouteControllerIntegrationTest]: RouteControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-11-28T13:15:34.476+01:00  INFO 15044 --- [route] [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.workshop.route.RouteApplication for test class com.workshop.route.application.controller.RouteControllerIntegrationTest
+2024-11-28T13:15:34.605+01:00  INFO 15044 --- [route] [o-auto-1-exec-5] c.w.r.a.controller.RouteController       : Fetching route with ID: 67485ee6ecfa7f1e950d846c
+2024-11-28T13:15:34.642+01:00  INFO 15044 --- [route] [ntLoopGroup-3-8] c.w.r.a.controller.RouteController       : Successfully fetched route with ID: 67485ee6ecfa7f1e950d846c
+2024-11-28T13:15:34.734+01:00  INFO 15044 --- [route] [o-auto-1-exec-7] c.w.r.a.controller.RouteController       : Fetching all routes
+2024-11-28T13:15:34.735+01:00  INFO 15044 --- [route] [o-auto-1-exec-7] c.w.r.a.controller.RouteController       : Starting to fetch all routes
+2024-11-28T13:15:34.773+01:00  INFO 15044 --- [route] [ntLoopGroup-3-8] c.w.r.a.controller.RouteController       : Successfully fetched all routes
+2024-11-28T13:15:34.869+01:00  INFO 15044 --- [route] [o-auto-1-exec-9] c.w.r.a.controller.RouteController       : Fetching route with ID: 67485ee6ecfa7f1e950d8472
+2024-11-28T13:15:34.905+01:00  INFO 15044 --- [route] [ntLoopGroup-3-8] c.w.r.a.controller.RouteController       : Successfully fetched route with ID: 67485ee6ecfa7f1e950d8472
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

@@ -105,7 +105,7 @@ class RouteQueryServiceImplTest {
     @Test
     @DisplayName("Test getRouteById - Route Not Found")
     void getRouteById_NotFound() {
-        ObjectId id = new ObjectId("507f1f77bcf86cd799439012"); // Usar un ObjectId válido pero diferente
+        ObjectId id = new ObjectId("507f1f77bcf86cd799439012");
         when(routeQueryRepository.findById(id)).thenReturn(Mono.empty());
 
         StepVerifier.create(routeService.getRouteById(id))

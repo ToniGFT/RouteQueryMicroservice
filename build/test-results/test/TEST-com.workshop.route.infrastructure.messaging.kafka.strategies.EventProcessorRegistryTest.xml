@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.workshop.route.infrastructure.messaging.kafka.strategies.EventProcessorRegistryTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2024-11-28T12:15:37" hostname="GFT-9H3G1F3" time="0.088">
+  <properties/>
+  <testcase name="testProcess_UnknownType()" classname="com.workshop.route.infrastructure.messaging.kafka.strategies.EventProcessorRegistryTest" time="0.082"/>
+  <testcase name="testProcess_KnownType_TypeA()" classname="com.workshop.route.infrastructure.messaging.kafka.strategies.EventProcessorRegistryTest" time="0.002"/>
+  <testcase name="testProcess_KnownType_TypeB()" classname="com.workshop.route.infrastructure.messaging.kafka.strategies.EventProcessorRegistryTest" time="0.002"/>
+  <system-out><![CDATA[2024-11-28T13:15:37.999+01:00  WARN 15044 --- [route] [    Test worker] c.w.r.i.m.k.s.EventProcessorRegistry     : Unknown event type: UNKNOWN_TYPE
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

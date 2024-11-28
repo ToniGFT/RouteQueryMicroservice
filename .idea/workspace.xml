@@ -5,18 +5,69 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bec0a3e9-fb96-4817-b8cc-0a1785715161" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/workshop/route/application/exception/GlobalExceptionHandlerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/workshop/route/application/services/RouteEventProcessorImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/workshop/route/infrastructure/configuration/kafka/KafkaConsumerConfigTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/workshop/route/infrastructure/messaging/kafka/RouteEventConsumerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/workshop/route/infrastructure/messaging/kafka/strategies/EventProcessorRegistryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/workshop/route/infrastructure/messaging/kafka/strategies/RouteCreatedEventProcessorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/workshop/route/infrastructure/messaging/kafka/strategies/RouteDeletedEventProcessorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/workshop/route/infrastructure/messaging/kafka/strategies/RouteUpdatedEventProcessorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.10.2/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.10.2/checksums/md5-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.10.2/checksums/sha1-checksums.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.10.2/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.10.2/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.10.2/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.10.2/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.10.2/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/workshop/route/application/services/kafka/RouteEventProcessorImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/workshop/route/application/services/kafka/RouteEventProcessorImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/workshop/route/infrastructure/messaging/kafka/strategies/RouteCreatedEventProcessor.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/workshop/route/infrastructure/messaging/kafka/strategies/RouteCreatedEventProcessor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/workshop/route/infrastructure/messaging/kafka/strategies/RouteDeletedEventProcessor.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/workshop/route/infrastructure/messaging/kafka/strategies/RouteDeletedEventProcessor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/workshop/route/infrastructure/messaging/kafka/strategies/RouteUpdatedEventProcessor.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/workshop/route/infrastructure/messaging/kafka/strategies/RouteUpdatedEventProcessor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/workshop/route/application/RouteServiceEndToEndTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/com/workshop/route/application/RouteServiceEndToEndTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/workshop/route/application/controller/RouteControllerIntegrationTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/com/workshop/route/application/controller/RouteControllerIntegrationTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/test.exec" beforeDir="false" afterPath="$PROJECT_DIR$/build/jacoco/test.exec" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/com.workshop.route.RouteApplicationTests.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/com.workshop.route.application.RouteServiceEndToEndTest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/com.workshop.route.application.controller.RouteControllerIntegrationTest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/com.workshop.route.application.controller.RouteControllerTest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/com.workshop.route.application.response.builder.RouteResponseBuilderTest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/com.workshop.route.application.response.service.RouteResponseServiceTest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/com.workshop.route.application.services.RouteQueryServiceImplTest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/com.workshop.route.application.controller.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/com.workshop.route.application.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/com.workshop.route.application.response.builder.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/com.workshop.route.application.response.service.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/com.workshop.route.application.services.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/com.workshop.route.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-com.workshop.route.RouteApplicationTests.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-com.workshop.route.application.RouteServiceEndToEndTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-com.workshop.route.application.controller.RouteControllerIntegrationTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-com.workshop.route.application.controller.RouteControllerTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-com.workshop.route.application.response.builder.RouteResponseBuilderTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-com.workshop.route.application.response.service.RouteResponseServiceTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-com.workshop.route.application.services.RouteQueryServiceImplTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/workshop/route/application/RouteServiceEndToEndTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/workshop/route/application/RouteServiceEndToEndTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/workshop/route/application/controller/RouteControllerIntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/workshop/route/application/controller/RouteControllerIntegrationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/workshop/route/application/services/RouteQueryServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/workshop/route/application/services/RouteQueryServiceImplTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageOptionsProvider">
+    <option name="myAddOrReplace" value="0" />
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
@@ -78,86 +129,137 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.RouteApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.RouteControllerTest.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.RouteMicroservice [:com.workshop.route.RouteApplication.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.RouteMicroservice [dependencies].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.RouteMicroservice [test].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.RouteQueryMicroservice [:com.workshop.route.RouteApplication.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.RouteQueryServiceImplTest.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.RouteResponseBuilderTest.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.RouteResponseServiceTest.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Tests in 'route'.executor&quot;: &quot;Coverage&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_directory_selection&quot;: &quot;C:/Coding/JavaProjects/WorkShop/RouteMicroservice/src/main/java/com/workshop/route&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/nabz/Cursos/RouteQueryMicroservice&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.RouteApplication.executor": "Run",
+    "Gradle.EventProcessorRegistryTest.executor": "Run",
+    "Gradle.GlobalExceptionHandlerTest.executor": "Run",
+    "Gradle.KafkaConsumerConfigTest.executor": "Run",
+    "Gradle.RouteControllerIntegrationTest.executor": "Run",
+    "Gradle.RouteControllerTest.executor": "Run",
+    "Gradle.RouteCreatedEventProcessorTest.executor": "Run",
+    "Gradle.RouteDeletedEventProcessorTest.executor": "Run",
+    "Gradle.RouteEventConsumerTest (1).executor": "Run",
+    "Gradle.RouteEventConsumerTest.executor": "Run",
+    "Gradle.RouteEventConsumerTest.testConsumeEvents_EventProcessorThrowsException.executor": "Run",
+    "Gradle.RouteEventConsumerTest.testConsumeEvents_SuccessfulProcessing.executor": "Run",
+    "Gradle.RouteEventProcessorImplTest.executor": "Run",
+    "Gradle.RouteMicroservice [:com.workshop.route.RouteApplication.main()].executor": "Run",
+    "Gradle.RouteMicroservice [dependencies].executor": "Run",
+    "Gradle.RouteMicroservice [test].executor": "Run",
+    "Gradle.RouteQueryMicroservice [:com.workshop.route.RouteApplication.main()].executor": "Run",
+    "Gradle.RouteQueryServiceImplTest.executor": "Run",
+    "Gradle.RouteResponseBuilderTest.executor": "Run",
+    "Gradle.RouteResponseServiceTest.executor": "Run",
+    "Gradle.RouteUpdatedEventProcessorTest.executor": "Run",
+    "Gradle.Tests in 'route'.executor": "Coverage",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_directory_selection": "C:/Coding/JavaProjects/WorkShop/RouteMicroservice/src/main/java/com/workshop/route",
+    "last_opened_file_path": "C:/Users/nabz/Cursos/RouteQueryMicroservice",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
-  <component name="RunManager" selected="Application.RouteApplication">
-    <configuration name="RouteApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.workshop.route.RouteApplication" />
-      <module name="route.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.workshop.route.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RouteMicroservice [dependencies]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+}]]></component>
+  <component name="RunManager" selected="Gradle.Tests in 'route'">
+    <configuration name="GlobalExceptionHandlerTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
+        <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value="dependencies" />
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.workshop.route.application.exception.GlobalExceptionHandlerTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
+      <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="RouteMicroservice [test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="RouteControllerIntegrationTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
+        <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value="test" />
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.workshop.route.application.controller.RouteControllerIntegrationTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="RouteEventConsumerTest (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.workshop.route.infrastructure.messaging.kafka.RouteEventConsumerTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="RouteEventConsumerTest.testConsumeEvents_SuccessfulProcessing" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.workshop.route.infrastructure.messaging.kafka.RouteEventConsumerTest.testConsumeEvents_SuccessfulProcessing&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
     <configuration name="Tests in 'route'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
@@ -197,10 +299,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.RouteApplication" />
         <item itemvalue="Gradle.Tests in 'route'" />
-        <item itemvalue="Gradle.RouteMicroservice [test]" />
-        <item itemvalue="Gradle.RouteMicroservice [dependencies]" />
+        <item itemvalue="Gradle.GlobalExceptionHandlerTest" />
+        <item itemvalue="Gradle.RouteControllerIntegrationTest" />
+        <item itemvalue="Gradle.RouteEventConsumerTest (1)" />
+        <item itemvalue="Gradle.RouteEventConsumerTest.testConsumeEvents_SuccessfulProcessing" />
       </list>
     </recent_temporary>
   </component>
@@ -216,6 +319,6 @@
     <servers />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/route$Tests_in__route_.ic" NAME="Tests in 'route' Coverage Results" MODIFIED="1730284032252" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/route$Tests_in__route_.ic" NAME="Tests in 'route' Coverage Results" MODIFIED="1732795479883" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
   </component>
 </project>

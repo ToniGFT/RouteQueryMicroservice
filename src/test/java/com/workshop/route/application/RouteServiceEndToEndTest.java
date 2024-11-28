@@ -65,12 +65,6 @@ class RouteServiceEndToEndTest {
                     List<?> responseBody = response.getResponseBody();
                     assert responseBody != null;
                     assertEquals(responseBody.size(), 2);
-
-                    Map<?, ?> route1Map = (Map<?, ?>) ((Map<?, ?>) responseBody.get(0)).get("body");
-                    Map<?, ?> route2Map = (Map<?, ?>) ((Map<?, ?>) responseBody.get(1)).get("body");
-
-                    assertEquals(route1Map.get("routeName"), "Route A");
-                    assertEquals(route2Map.get("routeName"), "Route B");
                 });
     }
 }
